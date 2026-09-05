@@ -86,3 +86,10 @@ its title, walked 7.60 m with wind enabled, and captured the [player view](shado
 Both runs reported no runtime errors. [Check results](shadow-checks.json).
 The independent code review found no mechanism issue; the shader appearance
 claim depends on these rendered observations, not on the headless property test.
+
+The 0.1.1 release export completed without warnings. Its 31-file PCK contains
+the corrected grass shader byte-for-byte; tooling and regression scenes remain
+excluded. The app passed strict signature verification and ran independently
+from `/tmp` for 180 frames with engine exit 0 and no runtime errors. This is a
+startup/render smoke check; the gameplay and visual comparisons above used gda.
+The source commit is `12af7cc`; later evidence-only changes do not alter the player.

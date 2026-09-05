@@ -1,7 +1,7 @@
 {
   "engine": "4.6.3",
   "pck_format": 3,
-  "pck_sha256": "34d1b39e057bf46378b5e052b305e5038b8828133b716dd276ce6cf7d950c65c",
+  "pck_sha256": "e4c42fb054ffd2b12279ccaff117025baf388f2a6480d25642862f15d9253abc",
   "pck_files": {
     ".godot/exported/133200997/export-3070c538c03ee49b7677ff960a3f5195-main.scn": {
       "bytes": 803,
@@ -28,16 +28,16 @@
       "md5": "5ad9f37ed497ce73d91674cc4236b93d"
     },
     ".godot/uid_cache.bin": {
-      "bytes": 709,
-      "md5": "6a07c86e0e171ddb3e296e3d8db59204"
+      "bytes": 753,
+      "md5": "0f8678a0d1bdfaf47926a87cfbfe8e3f"
     },
     "addons/meadow_renderer/grass_field.gd.remap": {
       "bytes": 61,
       "md5": "6c7ac59b9ec58cfe172fed26eefc0d68"
     },
     "addons/meadow_renderer/grass_field.gdc": {
-      "bytes": 8582,
-      "md5": "2e0538292e0b9155d02ec886a6c1d0d5"
+      "bytes": 8566,
+      "md5": "b8285fb00e8412f85fafe5655089d276"
     },
     "content/audio/grass_footstep.wav.import": {
       "bytes": 160,
@@ -72,8 +72,8 @@
       "md5": "827fedd7ad33511debf5bf6b9d111acd"
     },
     "content/meadow/grass.gdshader": {
-      "bytes": 2915,
-      "md5": "980dedb6ae961b037c1619a6ca7a882b"
+      "bytes": 3071,
+      "md5": "c59946849543e507029fc86ccd8fdfba"
     },
     "content/meadow/ground.gdshader": {
       "bytes": 999,
@@ -84,8 +84,8 @@
       "md5": "5f30870b81475e5f05524b06fbf0ce66"
     },
     "content/meadow/meadow_world.gdc": {
-      "bytes": 8991,
-      "md5": "bca10d33183dcd2b9ac2e4cdfea23835"
+      "bytes": 9073,
+      "md5": "ef888aae443e1e8e8d17a525dc6f29dd"
     },
     "content/meadow/terrain.gd.remap": {
       "bytes": 49,
@@ -131,13 +131,13 @@
   "font_license_matches_source": true,
   "tooling_excluded": true,
   "bundle_identifier": "org.verdant.meadow",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "zip": "Verdant-macOS.zip",
-  "bytes": 76507001,
-  "sha256": "f260c8cb8551d2a1fa4aec408c4d47c1936efb121a317053ee451d297f05c915",
-  "source_commit": "12700686e6ab3f15018e4c36e52f9de8b62adf2b",
+  "bytes": 76507086,
+  "sha256": "89bceddbfbe164b55cbbb6d79b5adaaa8ff4085e6c4a0c6abd634b4ef55b1fd6",
+  "source_commit": "12af7cc2891ecd07a9d72ba8863abbc957635735",
   "offline_files": {
-    "README.txt": "25f3f669122785b762616743462d600fedb5d6cb8bbb81347a0a72d1e8bbe3cf",
+    "README.txt": "56ec1950e94b501b6765d2829d7497eb99f505c2ac4c750814edef9859a4b3a1",
     "licenses/OFL.txt": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
     "licenses/GODOT-COPYRIGHT.txt": "b3330849267d56ddd3d62a513817506606c2195034411fe05859f0140bff9d8a",
     "licenses/GODOT-LICENSE.txt": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80"

@@ -101,5 +101,24 @@
     "addons/meadow_renderer/grass_field.gd": "93fec8dee519f298eee36b26165b7f7dd542999d9562fa7e8dafa145f94d4cc5",
     "content/meadow/grass.gdshader": "990f0d45e763ad9a5e366ca205f954e1bf3d368e5fb5204459e3cfe4a297f7c5",
     "content/meadow/meadow_world.gd": "e44bffc5642eb1e6be29c3b1350349a853e4169f507a86ba7e76133189503ed1"
+  },
+  "export_smoke": {
+    "version": "0.1.1",
+    "source_commit": "12af7cc2891ecd07a9d72ba8863abbc957635735",
+    "launch_cwd": "/tmp",
+    "flags": [
+      "--windowed",
+      "--resolution",
+      "1280x720",
+      "--quit-after",
+      "180"
+    ],
+    "engine": "4.6.3",
+    "renderer": "Metal 4.0 - Forward Mobile",
+    "device": "Apple M2 (Apple8)",
+    "process_exit": 0,
+    "runtime_errors": [],
+    "signature_check": "codesign --verify --deep --strict passed",
+    "scope": "Independent exported application startup and 180 rendered frames. Gameplay and visual comparison were checked through gda against the same runtime source."
   }
 }
