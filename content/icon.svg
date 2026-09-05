@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Verdant meadow</title>
+  <desc id="desc">Three green meadow leaves above a softly curved hill.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dff4d2"/>
+      <stop offset="1" stop-color="#9fd58f"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="1" x2="0.7" y2="0">
+      <stop offset="0" stop-color="#155b3b"/>
+      <stop offset="0.62" stop-color="#3f9551"/>
+      <stop offset="1" stop-color="#9bcf62"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#sky)"/>
+  <path d="M0 374C95 326 165 351 235 372C330 401 407 347 512 316V512H0Z" fill="#236c43"/>
+  <path d="M0 414C110 373 189 411 273 420C359 429 425 399 512 368V512H0Z" fill="#174f38" opacity="0.9"/>
+  <path d="M255 392C237 315 239 217 277 116C309 204 298 306 255 392Z" fill="url(#leaf)"/>
+  <path d="M244 394C200 335 168 264 169 180C224 235 250 309 244 394Z" fill="url(#leaf)" opacity="0.94"/>
+  <path d="M267 393C295 333 337 282 397 249C374 320 327 369 267 393Z" fill="url(#leaf)" opacity="0.9"/>
+  <path d="M255 392C255 298 263 211 277 116" fill="none" stroke="#d3e77b" stroke-width="6" stroke-linecap="round" opacity="0.72"/>
+</svg>

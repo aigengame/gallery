@@ -6,4 +6,5 @@ __pycache__/
 .runtime/
 evidence/raw/
 *.tmp
-
+.agents/
+.claude/

@@ -1,0 +1,108 @@
+{
+  "generator": {
+    "id": "verdant-procedural-assets",
+    "script": {
+      "bytes": 16134,
+      "path": "tools/assets.py",
+      "sha256": "ed6f8a9e7a2dee2c282bbf534848b4e4e4f8e9d071f959ec6aa37a81be215a55"
+    },
+    "version": 1
+  },
+  "prompt": {
+    "bytes": 1621,
+    "path": "assets/prompts/meadow-v1.md",
+    "sha256": "ff6608ba93037c21a2ad82b43a8cf6b6a5559d54fbb94db49a772c8e52c09030"
+  },
+  "resources": [
+    {
+      "inputs": {
+        "prompt_sha256": "ff6608ba93037c21a2ad82b43a8cf6b6a5559d54fbb94db49a772c8e52c09030"
+      },
+      "kind": "generated_audio",
+      "name": "meadow_ambience",
+      "output": {
+        "bytes": 2116844,
+        "path": "content/audio/meadow_ambience.wav",
+        "sha256": "e698db7df1c7ea5c6d59def5a72c1a5cf223b86d6a7344aa60a1d7abc12c5c77"
+      },
+      "qa": {
+        "channels": 2,
+        "dc_offset_max": 2e-08,
+        "duration_seconds": 24.0,
+        "frame_count": 529200,
+        "loop_seam_delta": 0.005035,
+        "peak": 0.199982,
+        "rms": 0.038528,
+        "sample_rate_hz": 22050,
+        "sample_width_bits": 16
+      },
+      "seed": 1447383620
+    },
+    {
+      "inputs": {
+        "prompt_sha256": "ff6608ba93037c21a2ad82b43a8cf6b6a5559d54fbb94db49a772c8e52c09030"
+      },
+      "kind": "generated_audio",
+      "name": "grass_footstep",
+      "output": {
+        "bytes": 95300,
+        "path": "content/audio/grass_footstep.wav",
+        "sha256": "dc6a2e05aeda6dfe222cb587faa2fe489ad003a4c10749481af6d18cad70e1da"
+      },
+      "qa": {
+        "channels": 2,
+        "dc_offset_max": 9.3e-07,
+        "duration_seconds": 1.08,
+        "frame_count": 23814,
+        "loop_seam_delta": 0.0,
+        "peak": 0.23999,
+        "rms": 0.035928,
+        "sample_rate_hz": 22050,
+        "sample_width_bits": 16
+      },
+      "seed": 1196573011
+    },
+    {
+      "inputs": {
+        "prompt_sha256": "ff6608ba93037c21a2ad82b43a8cf6b6a5559d54fbb94db49a772c8e52c09030"
+      },
+      "kind": "generated_svg",
+      "name": "verdant_icon",
+      "output": {
+        "bytes": 1333,
+        "path": "content/icon.svg",
+        "sha256": "0eea9b664f9c22db8a13ae38e6ee4c1bec32cb5c2b095e73fb4e8a37e1fe076e"
+      },
+      "qa": {
+        "view_box": "0 0 512 512"
+      },
+      "seed": null
+    },
+    {
+      "kind": "third_party_font",
+      "license": {
+        "bytes": 4388,
+        "path": "content/fonts/OFL.txt",
+        "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+        "source_url": "https://raw.githubusercontent.com/google/fonts/a85815a42757630ce188fdad368c2dfc444d4773/ofl/notosanssc/OFL.txt",
+        "spdx": "OFL-1.1"
+      },
+      "name": "Noto Sans SC",
+      "output": {
+        "bytes": 17772300,
+        "path": "content/fonts/NotoSansSC[wght].ttf",
+        "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da"
+      },
+      "qa": {
+        "format": "TrueType variable font",
+        "languages": [
+          "en",
+          "zh-Hans"
+        ]
+      },
+      "source_url": "https://raw.githubusercontent.com/google/fonts/a85815a42757630ce188fdad368c2dfc444d4773/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf",
+      "upstream_revision": "a85815a42757630ce188fdad368c2dfc444d4773"
+    }
+  ],
+  "schema_version": 1
+}
