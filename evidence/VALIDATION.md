@@ -1,12 +1,14 @@
 # Verdant 0.1.0 acceptance — 2026-09-05
 
+Historical record: the current shadow fix is documented in [0.1.1 validation](SHADOW_FIX.md).
+
 The local macOS player build is accepted for the seven-item production goal.
 Runtime source: `12700686e6ab3f15018e4c36e52f9de8b62adf2b`.
 The later evidence-only commit does not change the player.
 
 ## Player artifact
 
-- File: `builds/Verdant-macOS.zip`, 76,507,001 bytes.
+- File: `builds/Verdant-macOS-0.1.0.zip`, 76,507,001 bytes.
 - SHA-256: `f260c8cb8551d2a1fa4aec408c4d47c1936efb121a317053ee451d297f05c915`.
 - gda release export: success, no export warnings. Godot 4.6.3.
 - Universal executable: x86_64 + arm64; tested on Apple M2, 8 GPU cores.
@@ -15,7 +17,7 @@ The later evidence-only commit does not change the player.
   shaders and compiled application scripts present. OFL matches source exactly.
   gda harness, tests, tools, evidence and prompts are absent.
 - Offline bilingual player guide, font license, Godot MIT license and third-party
-  copyright notices are included in the ZIP. [Machine-readable audit](release-audit.json).
+  copyright notices are included in the ZIP. [Machine-readable audit](release-audit-0.1.0.json).
 
 The actual exported executable was launched from an empty directory outside the
 project, with the gda daemon stopped. Its title was `Verdant`, not a debug editor

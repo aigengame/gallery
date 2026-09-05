@@ -91,7 +91,6 @@ func update_view(camera_position: Vector3) -> void:
 		var count := maxi(1, int(float(chunk["count"]) * density))
 		if detail != int(chunk["detail"]):
 			node.multimesh.mesh = _meshes[detail]
-			node.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_ON if detail == 0 else GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 			chunk["detail"] = detail
 		node.multimesh.visible_instance_count = count
 		_visible_clumps += count
@@ -197,6 +196,9 @@ func _build_chunk(x_index: int, z_index: int) -> void:
 	node.position = origin
 	node.multimesh = multi
 	node.material_override = _material
+	# The light fades distant shadows. A mesh LOD must not remove an 8 m
+	# block of casters at once, particularly at lower quality settings.
+	node.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_ON
 	node.gi_mode = GeometryInstance3D.GI_MODE_DISABLED
 	add_child(node)
 	_chunks.append({"node": node, "center": Vector2(origin.x + CHUNK_SIZE * 0.5, origin.z + CHUNK_SIZE * 0.5), "count": placements.size(), "detail": -1})

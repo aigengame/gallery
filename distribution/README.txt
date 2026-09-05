@@ -1,4 +1,4 @@
-VERDANT / 青野 — 0.1.0
+VERDANT / 青野 — 0.1.1
 
 中文
 解压 Verdant-macOS.zip，打开 Verdant.app 即可游玩，无须 Godot 编辑器或 gda。

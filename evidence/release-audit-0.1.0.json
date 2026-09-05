@@ -1,0 +1,145 @@
+{
+  "engine": "4.6.3",
+  "pck_format": 3,
+  "pck_sha256": "34d1b39e057bf46378b5e052b305e5038b8828133b716dd276ce6cf7d950c65c",
+  "pck_files": {
+    ".godot/exported/133200997/export-3070c538c03ee49b7677ff960a3f5195-main.scn": {
+      "bytes": 803,
+      "md5": "1894ab19a0de2742aa912fd78f784b0e"
+    },
+    ".godot/global_script_class_cache.cfg": {
+      "bytes": 349,
+      "md5": "56845209c7049cdca0539aa5bc62867d"
+    },
+    ".godot/imported/NotoSansSC[wght].ttf-611bb670d991c3b008136853017f68ef.fontdata": {
+      "bytes": 13290646,
+      "md5": "eb6769199268c267627f0e7c0e147562"
+    },
+    ".godot/imported/grass_footstep.wav-9638023587ad40d65185c95c06f6688d.sample": {
+      "bytes": 19659,
+      "md5": "7b3d9d0945792cf338ac0fc06993d1c1"
+    },
+    ".godot/imported/icon.svg-347a55afb8e947b2a3966dc804863f96.ctex": {
+      "bytes": 20004,
+      "md5": "3a8894f851d69aaa941eefb7e07b97a8"
+    },
+    ".godot/imported/meadow_ambience.wav-556520204c1afaa44e6f997a8096a06c.sample": {
+      "bytes": 427923,
+      "md5": "5ad9f37ed497ce73d91674cc4236b93d"
+    },
+    ".godot/uid_cache.bin": {
+      "bytes": 709,
+      "md5": "6a07c86e0e171ddb3e296e3d8db59204"
+    },
+    "addons/meadow_renderer/grass_field.gd.remap": {
+      "bytes": 61,
+      "md5": "6c7ac59b9ec58cfe172fed26eefc0d68"
+    },
+    "addons/meadow_renderer/grass_field.gdc": {
+      "bytes": 8582,
+      "md5": "2e0538292e0b9155d02ec886a6c1d0d5"
+    },
+    "content/audio/grass_footstep.wav.import": {
+      "bytes": 160,
+      "md5": "9f3109b29eb0cb2455aaf4873ec15d11"
+    },
+    "content/audio/meadow_ambience.wav.import": {
+      "bytes": 161,
+      "md5": "77e13e2207cba3ec563b31de9f06c2c7"
+    },
+    "content/explorer/explorer.gd.remap": {
+      "bytes": 52,
+      "md5": "e018f59abd0f79b8c723cebcd45030cc"
+    },
+    "content/explorer/explorer.gdc": {
+      "bytes": 2882,
+      "md5": "a288802ef1224ec95aad2c8129f61cfb"
+    },
+    "content/fonts/NotoSansSC[wght].ttf.import": {
+      "bytes": 173,
+      "md5": "52d3ac89163d8998ff1dc35637ee169e"
+    },
+    "content/fonts/OFL.txt": {
+      "bytes": 4388,
+      "md5": "9e6561baca2756628871baf0c1e23539"
+    },
+    "content/icon.svg": {
+      "bytes": 1333,
+      "md5": "19c61bfa789f052c753b5f9ade1e7574"
+    },
+    "content/icon.svg.import": {
+      "bytes": 193,
+      "md5": "827fedd7ad33511debf5bf6b9d111acd"
+    },
+    "content/meadow/grass.gdshader": {
+      "bytes": 2915,
+      "md5": "980dedb6ae961b037c1619a6ca7a882b"
+    },
+    "content/meadow/ground.gdshader": {
+      "bytes": 999,
+      "md5": "dd265a3a1b70853a41b2221028d02afb"
+    },
+    "content/meadow/meadow_world.gd.remap": {
+      "bytes": 54,
+      "md5": "5f30870b81475e5f05524b06fbf0ce66"
+    },
+    "content/meadow/meadow_world.gdc": {
+      "bytes": 8991,
+      "md5": "bca10d33183dcd2b9ac2e4cdfea23835"
+    },
+    "content/meadow/terrain.gd.remap": {
+      "bytes": 49,
+      "md5": "a2481d2a088089b796a5707313444d9e"
+    },
+    "content/meadow/terrain.gdc": {
+      "bytes": 2089,
+      "md5": "ca8bfa05085bd94874f3399eca713972"
+    },
+    "main.gd.remap": {
+      "bytes": 31,
+      "md5": "d6a4c35c6eb79bb6f8c182c344ddaeb0"
+    },
+    "main.gdc": {
+      "bytes": 450,
+      "md5": "8ec6bb20a6968ae0d579e4f13098450b"
+    },
+    "main.tscn.remap": {
+      "bytes": 97,
+      "md5": "c74a9853779200b38c91a70cebd41c10"
+    },
+    "project.binary": {
+      "bytes": 5426,
+      "md5": "f88f686807cd3c9b332f7d2d2118d63a"
+    },
+    "systems/exploration/visit_progress.gd.remap": {
+      "bytes": 61,
+      "md5": "f82cf5e912e7f9af2f2f99c0590ef084"
+    },
+    "systems/exploration/visit_progress.gdc": {
+      "bytes": 507,
+      "md5": "9fdd1bb17fe339391171280fe8658ac3"
+    },
+    "ui/overlay.gd.remap": {
+      "bytes": 37,
+      "md5": "fcf8a33ee6b7405b09cbc84f10c999ee"
+    },
+    "ui/overlay.gdc": {
+      "bytes": 31742,
+      "md5": "a4d6e523184287baba1136a5728ebfe3"
+    }
+  },
+  "font_license_matches_source": true,
+  "tooling_excluded": true,
+  "bundle_identifier": "org.verdant.meadow",
+  "version": "0.1.0",
+  "zip": "Verdant-macOS.zip",
+  "bytes": 76507001,
+  "sha256": "f260c8cb8551d2a1fa4aec408c4d47c1936efb121a317053ee451d297f05c915",
+  "source_commit": "12700686e6ab3f15018e4c36e52f9de8b62adf2b",
+  "offline_files": {
+    "README.txt": "25f3f669122785b762616743462d600fedb5d6cb8bbb81347a0a72d1e8bbe3cf",
+    "licenses/OFL.txt": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+    "licenses/GODOT-COPYRIGHT.txt": "b3330849267d56ddd3d62a513817506606c2195034411fe05859f0140bff9d8a",
+    "licenses/GODOT-LICENSE.txt": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80"
+  }
+}

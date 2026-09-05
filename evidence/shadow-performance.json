@@ -1,0 +1,342 @@
+{
+  "before": {
+    "2560,1440": {
+      "frame_metrics": {
+        "frame_p50_ms": 16.643,
+        "frame_p95_ms": 18.077,
+        "gpu_p50_ms": 0.0,
+        "gpu_p95_ms": 0.0,
+        "gpu_timer_available": false,
+        "samples": 600
+      },
+      "stats": {
+        "fps": {
+          "count": 120,
+          "min": 60.0,
+          "max": 60.0,
+          "mean": 60.0,
+          "p50": 60.0,
+          "p95": 60.0
+        },
+        "draw_calls": {
+          "count": 120,
+          "min": 192.0,
+          "max": 192.0,
+          "mean": 192.0,
+          "p50": 192.0,
+          "p95": 192.0
+        },
+        "primitives_in_frame": {
+          "count": 120,
+          "min": 2228481.0,
+          "max": 2228481.0,
+          "mean": 2228481.0,
+          "p50": 2228481.0,
+          "p95": 2228481.0
+        }
+      },
+      "snapshot": {
+        "distance_walked": 0.0,
+        "grass": {
+          "build_time_ms": 418,
+          "chunks": 256,
+          "quality": "high",
+          "total_clumps": 203878,
+          "visible_chunks": 208,
+          "visible_clumps": 101197,
+          "visible_triangles": 1717041,
+          "wind_enabled": false
+        },
+        "nearest_viewpoint": 2,
+        "paused": false,
+        "position": "(8.0, 2.396679, 26.0)",
+        "quality": "high",
+        "render_size": [
+          2560.0,
+          1440.0
+        ],
+        "started": true,
+        "visit_distance": 31.62277603149414,
+        "visited": [],
+        "visited_count": 0,
+        "wind_enabled": false,
+        "window_size": [
+          1600,
+          900
+        ]
+      },
+      "window_mode": 0,
+      "capture": {
+        "path": "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/ab/before/2560.png",
+        "width": 2560,
+        "height": 1440,
+        "bytes": 4026569,
+        "format": "png",
+        "inline": null,
+        "predicate": null,
+        "receipt": {
+          "session_id": "9e18d45e4d572226",
+          "scene_path": "res://tests/shadow_regression.tscn",
+          "scene_uid": null,
+          "engine_frame": 1105,
+          "observed": null,
+          "sha256": "e720d58f94e187637d8ff24c1a5ed490b19c2a58ca2e53d811f51a8c73d5ab86"
+        }
+      }
+    },
+    "3840,2160": {
+      "frame_metrics": {
+        "frame_p50_ms": 16.645,
+        "frame_p95_ms": 18.252,
+        "gpu_p50_ms": 0.0,
+        "gpu_p95_ms": 0.0,
+        "gpu_timer_available": false,
+        "samples": 600
+      },
+      "stats": {
+        "fps": {
+          "count": 120,
+          "min": 60.0,
+          "max": 60.0,
+          "mean": 60.0,
+          "p50": 60.0,
+          "p95": 60.0
+        },
+        "draw_calls": {
+          "count": 120,
+          "min": 192.0,
+          "max": 192.0,
+          "mean": 192.0,
+          "p50": 192.0,
+          "p95": 192.0
+        },
+        "primitives_in_frame": {
+          "count": 120,
+          "min": 2228481.0,
+          "max": 2228481.0,
+          "mean": 2228481.0,
+          "p50": 2228481.0,
+          "p95": 2228481.0
+        }
+      },
+      "snapshot": {
+        "distance_walked": 0.0,
+        "grass": {
+          "build_time_ms": 418,
+          "chunks": 256,
+          "quality": "high",
+          "total_clumps": 203878,
+          "visible_chunks": 208,
+          "visible_clumps": 101197,
+          "visible_triangles": 1717041,
+          "wind_enabled": false
+        },
+        "nearest_viewpoint": 2,
+        "paused": false,
+        "position": "(8.0, 2.396679, 26.0)",
+        "quality": "high",
+        "render_size": [
+          3840.0,
+          2160.0
+        ],
+        "started": true,
+        "visit_distance": 31.62277603149414,
+        "visited": [],
+        "visited_count": 0,
+        "wind_enabled": false,
+        "window_size": [
+          1600,
+          900
+        ]
+      },
+      "window_mode": 0,
+      "capture": {
+        "path": "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/ab/before/3840.png",
+        "width": 3840,
+        "height": 2160,
+        "bytes": 7916243,
+        "format": "png",
+        "inline": null,
+        "predicate": null,
+        "receipt": {
+          "session_id": "9e18d45e4d572226",
+          "scene_path": "res://tests/shadow_regression.tscn",
+          "scene_uid": null,
+          "engine_frame": 2153,
+          "observed": null,
+          "sha256": "a99072409d1d467ba5730c3e4db3533002dac914cf89ab294f2ff3fe1ca71673"
+        }
+      }
+    }
+  },
+  "after": {
+    "2560,1440": {
+      "frame_metrics": {
+        "frame_p50_ms": 16.658,
+        "frame_p95_ms": 18.23,
+        "gpu_p50_ms": 0.0,
+        "gpu_p95_ms": 0.0,
+        "gpu_timer_available": false,
+        "samples": 600
+      },
+      "stats": {
+        "fps": {
+          "count": 120,
+          "min": 60.0,
+          "max": 60.0,
+          "mean": 60.0,
+          "p50": 60.0,
+          "p95": 60.0
+        },
+        "draw_calls": {
+          "count": 120,
+          "min": 343.0,
+          "max": 343.0,
+          "mean": 343.0,
+          "p50": 343.0,
+          "p95": 343.0
+        },
+        "primitives_in_frame": {
+          "count": 120,
+          "min": 3208248.0,
+          "max": 3208248.0,
+          "mean": 3208248.0,
+          "p50": 3208248.0,
+          "p95": 3208248.0
+        }
+      },
+      "snapshot": {
+        "distance_walked": 0.0,
+        "grass": {
+          "build_time_ms": 418,
+          "chunks": 256,
+          "quality": "high",
+          "total_clumps": 203878,
+          "visible_chunks": 208,
+          "visible_clumps": 101197,
+          "visible_triangles": 1717041,
+          "wind_enabled": false
+        },
+        "nearest_viewpoint": 2,
+        "paused": false,
+        "position": "(8.0, 2.396679, 26.0)",
+        "quality": "high",
+        "render_size": [
+          2560.0,
+          1440.0
+        ],
+        "started": true,
+        "visit_distance": 31.62277603149414,
+        "visited": [],
+        "visited_count": 0,
+        "wind_enabled": false,
+        "window_size": [
+          1600,
+          900
+        ]
+      },
+      "window_mode": 0,
+      "capture": {
+        "path": "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/ab/after/2560.png",
+        "width": 2560,
+        "height": 1440,
+        "bytes": 4316192,
+        "format": "png",
+        "inline": null,
+        "predicate": null,
+        "receipt": {
+          "session_id": "131a0277a9e744d0",
+          "scene_path": "res://tests/shadow_regression.tscn",
+          "scene_uid": null,
+          "engine_frame": 1099,
+          "observed": null,
+          "sha256": "e71cc7dc9102a2bc6308cbc2de51ec0d295475186f78a0fd0b70d9818991215c"
+        }
+      }
+    },
+    "3840,2160": {
+      "frame_metrics": {
+        "frame_p50_ms": 16.651,
+        "frame_p95_ms": 18.318,
+        "gpu_p50_ms": 0.0,
+        "gpu_p95_ms": 0.0,
+        "gpu_timer_available": false,
+        "samples": 600
+      },
+      "stats": {
+        "fps": {
+          "count": 120,
+          "min": 60.0,
+          "max": 60.0,
+          "mean": 60.0,
+          "p50": 60.0,
+          "p95": 60.0
+        },
+        "draw_calls": {
+          "count": 120,
+          "min": 343.0,
+          "max": 343.0,
+          "mean": 343.0,
+          "p50": 343.0,
+          "p95": 343.0
+        },
+        "primitives_in_frame": {
+          "count": 120,
+          "min": 3208248.0,
+          "max": 3208248.0,
+          "mean": 3208248.0,
+          "p50": 3208248.0,
+          "p95": 3208248.0
+        }
+      },
+      "snapshot": {
+        "distance_walked": 0.0,
+        "grass": {
+          "build_time_ms": 418,
+          "chunks": 256,
+          "quality": "high",
+          "total_clumps": 203878,
+          "visible_chunks": 208,
+          "visible_clumps": 101197,
+          "visible_triangles": 1717041,
+          "wind_enabled": false
+        },
+        "nearest_viewpoint": 2,
+        "paused": false,
+        "position": "(8.0, 2.396679, 26.0)",
+        "quality": "high",
+        "render_size": [
+          3840.0,
+          2160.0
+        ],
+        "started": true,
+        "visit_distance": 31.62277603149414,
+        "visited": [],
+        "visited_count": 0,
+        "wind_enabled": false,
+        "window_size": [
+          1600,
+          900
+        ]
+      },
+      "window_mode": 0,
+      "capture": {
+        "path": "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/ab/after/3840.png",
+        "width": 3840,
+        "height": 2160,
+        "bytes": 8778506,
+        "format": "png",
+        "inline": null,
+        "predicate": null,
+        "receipt": {
+          "session_id": "131a0277a9e744d0",
+          "scene_path": "res://tests/shadow_regression.tscn",
+          "scene_uid": null,
+          "engine_frame": 2145,
+          "observed": null,
+          "sha256": "f96b68550959fbb5b9c49688bee0833bf047f92f4be7b42f2d82d3f6c7fee44d"
+        }
+      }
+    }
+  }
+}

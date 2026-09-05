@@ -48,7 +48,8 @@ from the player. Exported builds stay local and are not committed.
 - [Asset pipeline](tools/asset_pipeline.md), [prompt](assets/prompts/meadow-v1.md)
   and [provenance receipt](assets/receipts/meadow-assets.json)
 - [gda dogfooding](docs/DOGFOODING.md)
-- [Validation and performance](evidence/VALIDATION.md)
+- [Current shadow fix and performance](evidence/SHADOW_FIX.md)
+- [Original 0.1.0 validation](evidence/VALIDATION.md)
 
 The geometry renderer uses 256 spatial MultiMesh chunks, deterministic clumps,
 three mesh details, smooth density reduction and opaque grass. Reported renderer

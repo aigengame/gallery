@@ -93,6 +93,9 @@ func _create_environment() -> void:
 	sun.shadow_enabled = true
 	sun.directional_shadow_max_distance = 36
 	sun.directional_shadow_mode = DirectionalLight3D.SHADOW_PARALLEL_2_SPLITS
+	# Give nearby blades more room before the coarser cascade, and blend its edge.
+	sun.directional_shadow_split_1 = 0.2
+	sun.directional_shadow_blend_splits = true
 	add_child(sun)
 
 func _create_landmarks() -> void:

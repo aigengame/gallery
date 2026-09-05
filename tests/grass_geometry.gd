@@ -16,6 +16,10 @@ func _verify() -> void:
 	var high: Dictionary = field.get_stats()
 	assert(high["chunks"] == 256)
 	assert(high["total_clumps"] > 200000)
+	if not _verify_shadow_lods(field):
+		field.free()
+		quit(1)
+		return
 	var meshes: Array = field.get("_meshes")
 	var mesh_triangles: Array[int] = []
 	for mesh: ArrayMesh in meshes:
@@ -57,8 +61,16 @@ func _verify() -> void:
 	assert(field._detail_for_distance(43.0, 2, 23.0, 44.0) == 2)
 	assert(field._detail_for_distance(41.0, 2, 23.0, 44.0) == 1)
 	field.set_quality("medium")
+	if not _verify_shadow_lods(field):
+		field.free()
+		quit(1)
+		return
 	var medium: Dictionary = field.get_stats()
 	field.set_quality("low")
+	if not _verify_shadow_lods(field):
+		field.free()
+		quit(1)
+		return
 	var low: Dictionary = field.get_stats()
 	assert(high["visible_triangles"] > medium["visible_triangles"])
 	assert(medium["visible_triangles"] > low["visible_triangles"])
@@ -71,10 +83,31 @@ func _verify() -> void:
 	field.update_view(Vector3(1000, 3, 1000))
 	field.set_quality("medium")
 	assert(field.get_stats()["visible_clumps"] == 0)
-	print(JSON.stringify({"high": high, "medium": medium, "low": low, "mesh_triangles": mesh_triangles, "geometry_winding_roots": "pass", "lod_shared_blades": "pass", "lod_hysteresis": "pass", "deterministic_counts": "pass", "instance_transform_readback": "requires_rendered_backend", "quality_and_culling": "pass"}))
+	print(JSON.stringify({"high": high, "medium": medium, "low": low, "mesh_triangles": mesh_triangles, "geometry_winding_roots": "pass", "lod_shared_blades": "pass", "lod_hysteresis": "pass", "lod_shadow_continuity": "pass", "deterministic_counts": "pass", "instance_transform_readback": "requires_rendered_backend", "quality_and_culling": "pass"}))
 	field.free()
 	print("GRASS_VERIFICATION_COMPLETE")
 	quit(0)
+
+
+func _verify_shadow_lods(field: Node3D) -> bool:
+	# Exercise live chunk selection, including both outward and inward changes.
+	var home: Vector3 = field.get("_camera_position")
+	for offset in [Vector3.ZERO, Vector3(28, 0, 0), Vector3.ZERO]:
+		field.set("_last_view_ms", -1000)
+		field.update_view(home + offset)
+		var details := {}
+		for chunk: Dictionary in field.get("_chunks"):
+			var node: MultiMeshInstance3D = chunk["node"]
+			if node.visible:
+				details[chunk["detail"]] = true
+				if node.cast_shadow != GeometryInstance3D.SHADOW_CASTING_SETTING_ON:
+					push_error("Visible LOD %d lost its chunk shadow" % chunk["detail"])
+					return false
+		if details.size() != 3:
+			push_error("Shadow regression did not exercise all three LODs")
+			return false
+	field.build()
+	return true
 
 
 func _height(x: float, z: float) -> float:

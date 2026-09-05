@@ -1,0 +1,105 @@
+{
+  "static_validation": {
+    "scripts": 12,
+    "valid": true
+  },
+  "geometry_regression": {
+    "baseline_commit": "c21ab93",
+    "before": {
+      "error": {
+        "category": "operation",
+        "code": "script_failed",
+        "message": "script run --strict: res://tests/grass_geometry.gd exited with status 1",
+        "diagnostics": "--- script stdout ---\nGodot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org\n\n--- script stderr ---\nERROR: Visible LOD 2 lost its chunk shadow\n   at: push_error (core/variant/variant_utility.cpp:1024)\n   GDScript backtrace (most recent call first):\n       [0] _verify_shadow_lods (res://tests/grass_geometry.gd:104)\n       [1] _verify (res://tests/grass_geometry.gd:19)\n",
+        "evidence": {
+          "exit_status": 1,
+          "script_errors": [
+            {
+              "kind": "push_error",
+              "message": "Visible LOD 2 lost its chunk shadow",
+              "path": "res://tests/grass_geometry.gd",
+              "line": 104
+            }
+          ]
+        }
+      }
+    },
+    "after": {
+      "engine_exit": 0,
+      "diagnostics": [],
+      "completion_marker": "GRASS_VERIFICATION_COMPLETE"
+    }
+  },
+  "movement": {
+    "state": {
+      "distance_walked": 24.300041671842337,
+      "grass": {
+        "build_time_ms": 424,
+        "chunks": 256,
+        "quality": "high",
+        "total_clumps": 203878,
+        "visible_chunks": 210,
+        "visible_clumps": 101688,
+        "visible_triangles": 1717005,
+        "wind_enabled": false
+      },
+      "nearest_viewpoint": 0,
+      "paused": false,
+      "position": "(0.385501, 1.826273, 27.49403)",
+      "quality": "high",
+      "render_size": [
+        2560.0,
+        1440.0
+      ],
+      "started": true,
+      "visit_distance": 29.05181312561035,
+      "visited": [],
+      "visited_count": 0,
+      "wind_enabled": false,
+      "window_size": [
+        1600,
+        900
+      ]
+    },
+    "runtime_errors": []
+  },
+  "player_wind": {
+    "state": {
+      "distance_walked": 7.600007124245167,
+      "grass": {
+        "build_time_ms": 424,
+        "chunks": 256,
+        "quality": "high",
+        "total_clumps": 203878,
+        "visible_chunks": 213,
+        "visible_clumps": 102928,
+        "visible_triangles": 1713288,
+        "wind_enabled": true
+      },
+      "nearest_viewpoint": 2,
+      "paused": false,
+      "position": "(7.489415, 2.611995, 24.70819)",
+      "quality": "high",
+      "render_size": [
+        2560.0,
+        1440.0
+      ],
+      "started": true,
+      "visit_distance": 31.336477279663086,
+      "visited": [],
+      "visited_count": 0,
+      "wind_enabled": true,
+      "window_size": [
+        2560,
+        1440
+      ]
+    },
+    "errors": []
+  },
+  "review": "Independent read-only review found no mechanism issue; actual shader appearance is covered by rendered evidence, not the headless property test.",
+  "runtime_sha256": {
+    "addons/meadow_renderer/grass_field.gd": "93fec8dee519f298eee36b26165b7f7dd542999d9562fa7e8dafa145f94d4cc5",
+    "content/meadow/grass.gdshader": "990f0d45e763ad9a5e366ca205f954e1bf3d368e5fb5204459e3cfe4a297f7c5",
+    "content/meadow/meadow_world.gd": "e44bffc5642eb1e6be29c3b1350349a853e4169f507a86ba7e76133189503ed1"
+  }
+}

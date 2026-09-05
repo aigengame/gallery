@@ -23,7 +23,9 @@ void vertex() {
 	blade_height = UV.y;
 	color_variation = INSTANCE_CUSTOM.r;
 	field_variation = 0.5 + 0.5 * sin(root.x * 0.127 + sin(root.z * 0.089) * 2.1);
-	float distance_to_camera = distance(root.xz, CAMERA_POSITION_WORLD.xz);
+	// Shadow passes use a light view. Keep blade LOD tied to the player camera
+	// so every shadow cascade renders the same geometry as the color pass.
+	float distance_to_camera = distance(root.xz, MAIN_CAM_INV_VIEW_MATRIX[3].xz);
 	float fade = 1.0 - smoothstep(fade_start, fade_end, distance_to_camera);
 	// Remove only the blades absent from the next mesh, before its chunk switches.
 	// Shared blades retain the same seeded root, center curve, width, and tip.
