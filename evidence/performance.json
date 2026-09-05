@@ -1,0 +1,344 @@
+{
+  "2k-high": {
+    "frame_intervals": {
+      "frame_p50_ms": 16.699,
+      "frame_p95_ms": 18.465,
+      "gpu_p50_ms": 0.0,
+      "gpu_p95_ms": 0.0,
+      "gpu_timer_available": false,
+      "samples": 600
+    },
+    "monitor_stats": {
+      "fps": {
+        "count": 60,
+        "min": 60.0,
+        "max": 60.0,
+        "mean": 60.0,
+        "p50": 60.0,
+        "p95": 60.0
+      },
+      "process_time": {
+        "count": 60,
+        "min": 0.018123,
+        "max": 0.018806,
+        "mean": 0.018566950000000002,
+        "p50": 0.018806,
+        "p95": 0.018806
+      },
+      "physics_process_time": {
+        "count": 60,
+        "min": 0.000186,
+        "max": 0.000262,
+        "mean": 0.00023540000000000003,
+        "p50": 0.000262,
+        "p95": 0.000262
+      },
+      "static_memory": {
+        "count": 60,
+        "min": 204634035.0,
+        "max": 204754963.0,
+        "mean": 204694618.6,
+        "p50": 204693739.0,
+        "p95": 204748891.0
+      },
+      "static_memory_max": {
+        "count": 60,
+        "min": 205608923.0,
+        "max": 205608923.0,
+        "mean": 205608923.0,
+        "p50": 205608923.0,
+        "p95": 205608923.0
+      },
+      "object_count": {
+        "count": 60,
+        "min": 2630.0,
+        "max": 2630.0,
+        "mean": 2630.0,
+        "p50": 2630.0,
+        "p95": 2630.0
+      },
+      "node_count": {
+        "count": 60,
+        "min": 492.0,
+        "max": 492.0,
+        "mean": 492.0,
+        "p50": 492.0,
+        "p95": 492.0
+      },
+      "orphan_node_count": {
+        "count": 60,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "p50": 0.0,
+        "p95": 0.0
+      },
+      "resource_count": {
+        "count": 60,
+        "min": 13.0,
+        "max": 13.0,
+        "mean": 13.0,
+        "p50": 13.0,
+        "p95": 13.0
+      },
+      "draw_calls": {
+        "count": 60,
+        "min": 172.0,
+        "max": 172.0,
+        "mean": 172.0,
+        "p50": 172.0,
+        "p95": 172.0
+      },
+      "objects_in_frame": {
+        "count": 60,
+        "min": 219.0,
+        "max": 219.0,
+        "mean": 219.0,
+        "p50": 219.0,
+        "p95": 219.0
+      },
+      "primitives_in_frame": {
+        "count": 60,
+        "min": 1775446.0,
+        "max": 1775446.0,
+        "mean": 1775446.0,
+        "p50": 1775446.0,
+        "p95": 1775446.0
+      },
+      "video_memory": {
+        "count": 60,
+        "min": 203210752.0,
+        "max": 203210752.0,
+        "mean": 203210752.0,
+        "p50": 203210752.0,
+        "p95": 203210752.0
+      },
+      "physics_2d_active_objects": {
+        "count": 60,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "p50": 0.0,
+        "p95": 0.0
+      },
+      "physics_3d_active_objects": {
+        "count": 60,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "p50": 0.0,
+        "p95": 0.0
+      },
+      "navigation_active_maps": {
+        "count": 60,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "p50": 0.0,
+        "p95": 0.0
+      }
+    },
+    "snapshot": {
+      "distance_walked": 0.0,
+      "grass": {
+        "build_time_ms": 422,
+        "chunks": 256,
+        "quality": "high",
+        "total_clumps": 203878,
+        "visible_chunks": 210,
+        "visible_clumps": 102268,
+        "visible_triangles": 1695192,
+        "wind_enabled": true
+      },
+      "nearest_viewpoint": 0,
+      "paused": false,
+      "position": "(0.0, 2.021062, 26.0)",
+      "quality": "high",
+      "render_size": [
+        2560.0,
+        1440.0
+      ],
+      "started": true,
+      "visit_distance": 27.658634185791016,
+      "visited": [],
+      "visited_count": 0,
+      "wind_enabled": true,
+      "window_size": [
+        2560,
+        1440
+      ]
+    },
+    "capture_context": "final runtime, start viewpoint, stationary, VSync enabled, Metal Mobile, FXAA, no MSAA, correct CanvasLayer scale"
+  },
+  "4k-high": {
+    "frame_intervals": {
+      "frame_p50_ms": 16.697,
+      "frame_p95_ms": 18.295,
+      "gpu_p50_ms": 0.0,
+      "gpu_p95_ms": 0.0,
+      "gpu_timer_available": false,
+      "samples": 600
+    },
+    "monitor_stats": {
+      "fps": {
+        "count": 60,
+        "min": 60.0,
+        "max": 60.0,
+        "mean": 60.0,
+        "p50": 60.0,
+        "p95": 60.0
+      },
+      "process_time": {
+        "count": 60,
+        "min": 0.018363,
+        "max": 0.019718,
+        "mean": 0.01951475,
+        "p50": 0.019718,
+        "p95": 0.019718
+      },
+      "physics_process_time": {
+        "count": 60,
+        "min": 0.000183,
+        "max": 0.000253,
+        "mean": 0.00019350000000000001,
+        "p50": 0.000183,
+        "p95": 0.000253
+      },
+      "static_memory": {
+        "count": 60,
+        "min": 204616699.0,
+        "max": 204737627.0,
+        "mean": 204677282.6,
+        "p50": 204676403.0,
+        "p95": 204731555.0
+      },
+      "static_memory_max": {
+        "count": 60,
+        "min": 205608923.0,
+        "max": 205608923.0,
+        "mean": 205608923.0,
+        "p50": 205608923.0,
+        "p95": 205608923.0
+      },
+      "object_count": {
+        "count": 60,
+        "min": 2630.0,
+        "max": 2630.0,
+        "mean": 2630.0,
+        "p50": 2630.0,
+        "p95": 2630.0
+      },
+      "node_count": {
+        "count": 60,
+        "min": 492.0,
+        "max": 492.0,
+        "mean": 492.0,
+        "p50": 492.0,
+        "p95": 492.0
+      },
+      "orphan_node_count": {
+        "count": 60,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "p50": 0.0,
+        "p95": 0.0
+      },
+      "resource_count": {
+        "count": 60,
+        "min": 13.0,
+        "max": 13.0,
+        "mean": 13.0,
+        "p50": 13.0,
+        "p95": 13.0
+      },
+      "draw_calls": {
+        "count": 60,
+        "min": 172.0,
+        "max": 172.0,
+        "mean": 172.0,
+        "p50": 172.0,
+        "p95": 172.0
+      },
+      "objects_in_frame": {
+        "count": 60,
+        "min": 219.0,
+        "max": 219.0,
+        "mean": 219.0,
+        "p50": 219.0,
+        "p95": 219.0
+      },
+      "primitives_in_frame": {
+        "count": 60,
+        "min": 1775446.0,
+        "max": 1775446.0,
+        "mean": 1775446.0,
+        "p50": 1775446.0,
+        "p95": 1775446.0
+      },
+      "video_memory": {
+        "count": 60,
+        "min": 263471104.0,
+        "max": 263471104.0,
+        "mean": 263471104.0,
+        "p50": 263471104.0,
+        "p95": 263471104.0
+      },
+      "physics_2d_active_objects": {
+        "count": 60,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "p50": 0.0,
+        "p95": 0.0
+      },
+      "physics_3d_active_objects": {
+        "count": 60,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "p50": 0.0,
+        "p95": 0.0
+      },
+      "navigation_active_maps": {
+        "count": 60,
+        "min": 0.0,
+        "max": 0.0,
+        "mean": 0.0,
+        "p50": 0.0,
+        "p95": 0.0
+      }
+    },
+    "snapshot": {
+      "distance_walked": 0.0,
+      "grass": {
+        "build_time_ms": 422,
+        "chunks": 256,
+        "quality": "high",
+        "total_clumps": 203878,
+        "visible_chunks": 210,
+        "visible_clumps": 102268,
+        "visible_triangles": 1695192,
+        "wind_enabled": true
+      },
+      "nearest_viewpoint": 0,
+      "paused": false,
+      "position": "(0.0, 2.021062, 26.0)",
+      "quality": "high",
+      "render_size": [
+        3840.0,
+        2160.0
+      ],
+      "started": true,
+      "visit_distance": 27.658634185791016,
+      "visited": [],
+      "visited_count": 0,
+      "wind_enabled": true,
+      "window_size": [
+        2560,
+        1440
+      ]
+    },
+    "capture_context": "final runtime, start viewpoint, stationary, VSync enabled, Metal Mobile, FXAA, no MSAA, correct CanvasLayer scale"
+  }
+}

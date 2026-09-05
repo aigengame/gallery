@@ -1,0 +1,60 @@
+{
+  "source_commit": "12700686e6ab3f15018e4c36e52f9de8b62adf2b",
+  "artifact_sha256": "f260c8cb8551d2a1fa4aec408c4d47c1936efb121a317053ee451d297f05c915",
+  "independent_launch": {
+    "cwd": "/private/tmp/verdant-player-smoke",
+    "editor_required": false,
+    "gda_daemon_running": false,
+    "title": "Verdant",
+    "renderer": "Metal 4.0 Forward Mobile",
+    "cpu_architectures": [
+      "x86_64",
+      "arm64"
+    ],
+    "tested_architecture": "arm64",
+    "windowed_exit_code": 0,
+    "codesign_verify": "passed"
+  },
+  "native_ui_observed": [
+    "English title",
+    "Chinese title and controls",
+    "2K default",
+    "4K selected via player menu",
+    "4K fullscreen layout",
+    "high-to-low grass quality reduces density",
+    "wind off selected",
+    "volume 0 percent then 70 percent",
+    "start",
+    "Escape pause",
+    "resume",
+    "restart menu action returns to exploration",
+    "quit via player menu"
+  ],
+  "gda_explorer_observed": {
+    "mouse_yaw_before": -1.3916,
+    "mouse_yaw_after": -1.4796,
+    "crouched_eye_height_m": 0.4804882340958494,
+    "jump_height_m": 0.7375000000000004,
+    "capture_size": [
+      3840,
+      2160
+    ],
+    "runtime_errors": []
+  },
+  "boundaries": [
+    "Full route with sustained movement is verified via gda InputMap actions; export smoke uses native UI and short keys, not a second complete native walking route.",
+    "Native automation lost reliable window targeting after fullscreen; the app continued rendering, and a new windowed launch completed smoke and exited normally.",
+    "Audio acceptance uses resource playback configuration and deterministic PCM QA, not human listening.",
+    "Intel binary is packaged but not run on Intel hardware."
+  ],
+  "logs": {
+    "player-console.log": {
+      "sha256": "33b29fcf540cfea30d3f7508c8663c7cbc19903c1af9399222d79d5d9d7c32f2",
+      "error_lines": []
+    },
+    "player-windowed-console.log": {
+      "sha256": "0a3c1762ad4b52fa0b6673a2d95ce252aa1efe47ce9963244f431cc52a5fbc7a",
+      "error_lines": []
+    }
+  }
+}

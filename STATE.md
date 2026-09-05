@@ -1,24 +1,13 @@
-# Current state
+# STATE — Verdant / 青野
 
-The active goal is the seven-item green meadow production request in CONTEXT.md.
-The workspace initially contained guidance only. Godot 4.6.3, gda 0.14.0,
-Git LFS 3.7.1, and macOS export templates 4.6.3 are installed. GPU: Apple M2 (8 cores).
+- **Phase:** Seven-item production goal delivered; local macOS player demo accepted.
+- **Delivered:** Bilingual exploration, real 2K/4K viewport rendering, geometric green grass, wind, LOD and three viewpoints.
+- **Runtime source:** `1270068`; later evidence-only changes do not alter the exported player.
+- **Artifact:** `builds/Verdant-macOS.zip`; hash and PCK closure in `evidence/release-audit.json`.
+- **Validation:** Full gda walking route, free look/crouch/jump, script/geometry/asset checks, native exported UI and clean windowed exit passed.
+- **Performance:** M2 stationary high-quality sample: 2K and 4K 60.0 FPS in the final window. GPU timer unavailable; see `evidence/VALIDATION.md` for limits.
+- **Production records:** Asset prompt/pipeline/receipts, four local gda feedback items, player guide and licenses retained.
+- **Git:** Source and LFS assets committed locally; no remote, no push.
+- **Next up:** Optional user playtest feedback and additional hardware coverage. No required production work remains.
 
-The first green meadow increment runs in a real window. Chunked geometric grass,
-rooted wind, distance detail, a terrain-following explorer, bilingual menus, route
-progress and the asset pipeline are implemented. Godot script/geometry/input-boundary
-checks pass. `tools/playtest.py` completed a real gda walkthrough: both languages,
-movement, pause/resume, three viewpoints, completion/continue, and restart, with no
-runtime errors. Evidence: `evidence/raw/playtest/summary.json` and screenshots.
-
-The first macOS release ZIP was exported by gda at builds/Verdant-macOS.zip.
-It is a candidate; independent artifact startup, final 2K/4K checks and resource
-closure are still pending. Initial frame capture was 1280×720; no 2K/4K performance
-claim is made. RenderingServer's GPU timer returned unavailable on the first run.
-
-Next: inspect the exported player app, exercise resolution/quality controls, fix
-remaining product defects, and record a final artifact hash and validation summary.
-No remote exists and nothing has been pushed.
-
-The primary agent owns shared project settings, integration, evidence, and commits.
-Subtasks use disjoint source directories and do not stage or commit shared state.
+_Updated: 2026-09-05_

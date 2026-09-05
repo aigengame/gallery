@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "language_switch": true,
+  "real_action_movement": true,
+  "pause_freezes_movement": true,
+  "viewpoints_visited": 3,
+  "completion_continue": true,
+  "restart_clears_progress": true,
+  "runtime_errors": [],
+  "operations": 63,
+  "render_size": [
+    2560,
+    1440
+  ],
+  "source_commit": "1270068",
+  "operations_sha256": "a3a494d82e4464ad85933b931854ab7a1bf6b83a969ab4d1c5c43e43172455d4"
+}
