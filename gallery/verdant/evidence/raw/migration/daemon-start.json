@@ -1,0 +1,15 @@
+{
+  "cli_exit": 0,
+  "result": {
+    "pid": 74864,
+    "socket_path": "/Users/lelej/.gda/run/4bd317eb36b44450.cli.sock",
+    "installed_harness": false,
+    "harness_synced": false,
+    "harness_version": "18",
+    "created_paths": [],
+    "created_sections": [],
+    "windowed": true,
+    "already_running": false
+  },
+  "stderr": ""
+}

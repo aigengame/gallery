@@ -1,0 +1,19 @@
+{
+  "error": {
+    "category": "operation",
+    "code": "script_failed",
+    "message": "script run --strict: res://tests/grass_geometry.gd exited with status 1",
+    "diagnostics": "--- script stdout ---\nGodot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org\n\n--- script stderr ---\nERROR: Visible LOD 2 lost its chunk shadow\n   at: push_error (core/variant/variant_utility.cpp:1024)\n   GDScript backtrace (most recent call first):\n       [0] _verify_shadow_lods (res://tests/grass_geometry.gd:104)\n       [1] _verify (res://tests/grass_geometry.gd:19)\n",
+    "evidence": {
+      "exit_status": 1,
+      "script_errors": [
+        {
+          "kind": "push_error",
+          "message": "Visible LOD 2 lost its chunk shadow",
+          "path": "res://tests/grass_geometry.gd",
+          "line": 104
+        }
+      ]
+    }
+  }
+}

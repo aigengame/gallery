@@ -1,9 +1,13 @@
-# PITFALLS — godot-agent
+# PITFALLS — Gallery
 
 _Project-scoped operational guidance for agents. These entries are not universal
 constraints. Apply an entry only when its **Applies when** condition matches the current
 environment. Check the current execution environment first when that check is practical;
 another environment can have different capabilities._
+
+Godot/gda entries apply only to projects that use those tools. Some entries were
+verified in the godot-agent repository: its issue numbers, source paths, and test
+names describe that original validation context, not modules in Gallery.
 
 ## Writable `uv`, `uvx`, and project environment paths in a managed sandbox
 

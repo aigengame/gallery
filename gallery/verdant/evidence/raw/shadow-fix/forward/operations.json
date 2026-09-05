@@ -1,0 +1,293 @@
+[
+  {
+    "args": [
+      "game",
+      "set",
+      "/root/Verdant/World/Explorer",
+      "--property",
+      "yaw",
+      "--value",
+      "-1.570796"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/Verdant/World/Explorer",
+      "property": "yaw",
+      "type": "float",
+      "value": -1.570796,
+      "verified": true
+    }
+  },
+  {
+    "args": [
+      "input",
+      "sequence",
+      "--events",
+      "[{\"type\": \"action\", \"action\": \"walk_forward\", \"physics_frame\": 0}, {\"type\": \"action\", \"action\": \"walk_forward\", \"release\": true, \"physics_frame\": 120}]"
+    ],
+    "exit": 0,
+    "result": {
+      "kind": "sequence",
+      "clock": "physics",
+      "events": 2,
+      "frames": 121
+    }
+  },
+  {
+    "args": [
+      "game",
+      "set",
+      "/root/Verdant/World/Explorer",
+      "--property",
+      "yaw",
+      "--value",
+      "0"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/Verdant/World/Explorer",
+      "property": "yaw",
+      "type": "float",
+      "value": 0.0,
+      "verified": true
+    }
+  },
+  {
+    "args": [
+      "game",
+      "set",
+      "/root/Verdant/World/Explorer",
+      "--property",
+      "pitch",
+      "--value",
+      "-0.22"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/Verdant/World/Explorer",
+      "property": "pitch",
+      "type": "float",
+      "value": -0.22,
+      "verified": true
+    }
+  },
+  {
+    "args": [
+      "game",
+      "set",
+      "/root/Verdant/World/Sun",
+      "--property",
+      "directional_shadow_blend_splits",
+      "--value",
+      "false"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/Verdant/World/Sun",
+      "property": "directional_shadow_blend_splits",
+      "type": "bool",
+      "value": false,
+      "verified": true
+    }
+  },
+  {
+    "args": [
+      "screen",
+      "capture",
+      "--output",
+      "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/forward/before.png"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/forward/before.png",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 4098357,
+      "format": "png",
+      "inline": null,
+      "predicate": null,
+      "receipt": {
+        "session_id": "c03e18a22e4fbddc",
+        "scene_path": "res://main.tscn",
+        "scene_uid": null,
+        "engine_frame": 9651,
+        "observed": null,
+        "sha256": "185080f8293f70f6392d8c178c44e9a9dcbc5f90bb0c4024e00d4a9756ee2a8e"
+      }
+    }
+  },
+  {
+    "args": [
+      "game",
+      "set",
+      "/root/Verdant/World/Sun",
+      "--property",
+      "directional_shadow_blend_splits",
+      "--value",
+      "true"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/Verdant/World/Sun",
+      "property": "directional_shadow_blend_splits",
+      "type": "bool",
+      "value": true,
+      "verified": true
+    }
+  },
+  {
+    "args": [
+      "screen",
+      "capture",
+      "--output",
+      "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/forward/blend-only.png"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/forward/blend-only.png",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 4007599,
+      "format": "png",
+      "inline": null,
+      "predicate": null,
+      "receipt": {
+        "session_id": "c03e18a22e4fbddc",
+        "scene_path": "res://main.tscn",
+        "scene_uid": null,
+        "engine_frame": 9690,
+        "observed": null,
+        "sha256": "fe9218cfbb9cd9ec412714346ed87e4404686916e4e8302fb333815f406f1bb6"
+      }
+    }
+  },
+  {
+    "args": [
+      "game",
+      "set",
+      "/root/Verdant/World/Sun",
+      "--property",
+      "directional_shadow_blend_splits",
+      "--value",
+      "false"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/Verdant/World/Sun",
+      "property": "directional_shadow_blend_splits",
+      "type": "bool",
+      "value": false,
+      "verified": true
+    }
+  },
+  {
+    "args": [
+      "game",
+      "set",
+      "/root/Verdant/World/Sun",
+      "--property",
+      "directional_shadow_split_1",
+      "--value",
+      "0.3"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/Verdant/World/Sun",
+      "property": "directional_shadow_split_1",
+      "type": "float",
+      "value": 0.30000001192092896,
+      "verified": false
+    }
+  },
+  {
+    "args": [
+      "screen",
+      "capture",
+      "--output",
+      "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/forward/split-03.png"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/forward/split-03.png",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 4312289,
+      "format": "png",
+      "inline": null,
+      "predicate": null,
+      "receipt": {
+        "session_id": "c03e18a22e4fbddc",
+        "scene_path": "res://main.tscn",
+        "scene_uid": null,
+        "engine_frame": 9729,
+        "observed": null,
+        "sha256": "2bcf2e65b345af0ed6f1b22a60cd6b70e8541e88fdcb6f076e2444aebedca1f5"
+      }
+    }
+  },
+  {
+    "args": [
+      "game",
+      "set",
+      "/root/Verdant/World/Sun",
+      "--property",
+      "directional_shadow_split_1",
+      "--value",
+      "0.1"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/Verdant/World/Sun",
+      "property": "directional_shadow_split_1",
+      "type": "float",
+      "value": 0.10000000149011612,
+      "verified": false
+    }
+  },
+  {
+    "args": [
+      "game",
+      "call",
+      "/root/Verdant/World",
+      "--method",
+      "get_snapshot"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/Verdant/World",
+      "name": "World",
+      "type": "Node3D",
+      "method": "get_snapshot",
+      "value": {
+        "distance_walked": 7.600007057189941,
+        "grass": {
+          "build_time_ms": 455,
+          "chunks": 256,
+          "quality": "high",
+          "total_clumps": 203878,
+          "visible_chunks": 209,
+          "visible_clumps": 101505,
+          "visible_triangles": 1695405,
+          "wind_enabled": true
+        },
+        "nearest_viewpoint": 2,
+        "paused": false,
+        "position": "(7.600007, 2.392901, 26.0)",
+        "quality": "high",
+        "render_size": [
+          2560.0,
+          1440.0
+        ],
+        "started": true,
+        "visit_distance": 31.95245933532715,
+        "visited": [],
+        "visited_count": 0,
+        "wind_enabled": true,
+        "window_size": [
+          1988,
+          1440
+        ]
+      }
+    }
+  }
+]

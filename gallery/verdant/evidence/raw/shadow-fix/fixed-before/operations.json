@@ -1,0 +1,1608 @@
+[
+  {
+    "args": [
+      "game",
+      "call",
+      "/root/ShadowRegression/World",
+      "--method",
+      "get_snapshot"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/ShadowRegression/World",
+      "name": "World",
+      "type": "Node3D",
+      "method": "get_snapshot",
+      "value": {
+        "distance_walked": 0.0,
+        "grass": {
+          "build_time_ms": 1488,
+          "chunks": 256,
+          "quality": "high",
+          "total_clumps": 203878,
+          "visible_chunks": 208,
+          "visible_clumps": 101197,
+          "visible_triangles": 1717041,
+          "wind_enabled": false
+        },
+        "nearest_viewpoint": -1,
+        "paused": false,
+        "position": "(8.0, 2.396679, 26.0)",
+        "quality": "high",
+        "render_size": [
+          2560.0,
+          1440.0
+        ],
+        "started": true,
+        "visit_distance": 1000.0,
+        "visited": [],
+        "visited_count": 0,
+        "wind_enabled": false,
+        "window_size": [
+          2560,
+          1440
+        ]
+      }
+    }
+  },
+  {
+    "args": [
+      "screen",
+      "capture",
+      "--output",
+      "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/fixed-before/before.png"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/fixed-before/before.png",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 4026569,
+      "format": "png",
+      "inline": null,
+      "predicate": null,
+      "receipt": {
+        "session_id": "5d8fc6850c3cba77",
+        "scene_path": "res://tests/shadow_regression.tscn",
+        "scene_uid": null,
+        "engine_frame": 33,
+        "observed": null,
+        "sha256": "e720d58f94e187637d8ff24c1a5ed490b19c2a58ca2e53d811f51a8c73d5ab86"
+      }
+    }
+  },
+  {
+    "args": [
+      "game",
+      "set",
+      "/root/ShadowRegression/World/Sun",
+      "--property",
+      "directional_shadow_blend_splits",
+      "--value",
+      "true"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/ShadowRegression/World/Sun",
+      "property": "directional_shadow_blend_splits",
+      "type": "bool",
+      "value": true,
+      "verified": true
+    }
+  },
+  {
+    "args": [
+      "screen",
+      "capture",
+      "--output",
+      "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/fixed-before/blend-only.png"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/fixed-before/blend-only.png",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 4044715,
+      "format": "png",
+      "inline": null,
+      "predicate": null,
+      "receipt": {
+        "session_id": "5d8fc6850c3cba77",
+        "scene_path": "res://tests/shadow_regression.tscn",
+        "scene_uid": null,
+        "engine_frame": 59,
+        "observed": null,
+        "sha256": "9218353b4e9338fce711e65d89f257f2974e6687e6175c327467c3903c693df1"
+      }
+    }
+  },
+  {
+    "args": [
+      "game",
+      "set",
+      "/root/ShadowRegression/World/Sun",
+      "--property",
+      "directional_shadow_blend_splits",
+      "--value",
+      "false"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/ShadowRegression/World/Sun",
+      "property": "directional_shadow_blend_splits",
+      "type": "bool",
+      "value": false,
+      "verified": true
+    }
+  },
+  {
+    "args": [
+      "perf",
+      "monitors",
+      "--frames",
+      "60"
+    ],
+    "exit": 0,
+    "result": {
+      "kind": "window",
+      "timestamp": null,
+      "monitors": null,
+      "frames": 60,
+      "max_frames": 600,
+      "stats": {
+        "fps": {
+          "count": 60,
+          "min": 2.0,
+          "max": 29.0,
+          "mean": 24.816666666666666,
+          "p50": 25.0,
+          "p95": 29.0
+        },
+        "process_time": {
+          "count": 60,
+          "min": 0.051528,
+          "max": 0.078773,
+          "mean": 0.05594038333333333,
+          "p50": 0.056471,
+          "p95": 0.078773
+        },
+        "physics_process_time": {
+          "count": 60,
+          "min": 0.000122,
+          "max": 0.000204,
+          "mean": 0.00015946666666666668,
+          "p50": 0.000126,
+          "p95": 0.000204
+        },
+        "static_memory": {
+          "count": 60,
+          "min": 96752177.0,
+          "max": 96878673.0,
+          "mean": 96814683.0,
+          "p50": 96814089.0,
+          "p95": 96869241.0
+        },
+        "static_memory_max": {
+          "count": 60,
+          "min": 204612553.0,
+          "max": 204612553.0,
+          "mean": 204612553.0,
+          "p50": 204612553.0,
+          "p95": 204612553.0
+        },
+        "object_count": {
+          "count": 60,
+          "min": 2114.0,
+          "max": 2114.0,
+          "mean": 2114.0,
+          "p50": 2114.0,
+          "p95": 2114.0
+        },
+        "node_count": {
+          "count": 60,
+          "min": 312.0,
+          "max": 312.0,
+          "mean": 312.0,
+          "p50": 312.0,
+          "p95": 312.0
+        },
+        "orphan_node_count": {
+          "count": 60,
+          "min": 0.0,
+          "max": 0.0,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0
+        },
+        "resource_count": {
+          "count": 60,
+          "min": 11.0,
+          "max": 11.0,
+          "mean": 11.0,
+          "p50": 11.0,
+          "p95": 11.0
+        },
+        "draw_calls": {
+          "count": 60,
+          "min": 192.0,
+          "max": 192.0,
+          "mean": 192.0,
+          "p50": 192.0,
+          "p95": 192.0
+        },
+        "objects_in_frame": {
+          "count": 60,
+          "min": 192.0,
+          "max": 192.0,
+          "mean": 192.0,
+          "p50": 192.0,
+          "p95": 192.0
+        },
+        "primitives_in_frame": {
+          "count": 60,
+          "min": 2228481.0,
+          "max": 2228481.0,
+          "mean": 2228481.0,
+          "p50": 2228481.0,
+          "p95": 2228481.0
+        },
+        "video_memory": {
+          "count": 60,
+          "min": 190857216.0,
+          "max": 190857216.0,
+          "mean": 190857216.0,
+          "p50": 190857216.0,
+          "p95": 190857216.0
+        },
+        "physics_2d_active_objects": {
+          "count": 60,
+          "min": 0.0,
+          "max": 0.0,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0
+        },
+        "physics_3d_active_objects": {
+          "count": 60,
+          "min": 0.0,
+          "max": 0.0,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0
+        },
+        "navigation_active_maps": {
+          "count": 60,
+          "min": 0.0,
+          "max": 0.0,
+          "mean": 0.0,
+          "p50": 0.0,
+          "p95": 0.0
+        }
+      },
+      "samples": [
+        {
+          "frame": 0,
+          "timestamp": 10892,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 2.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000122,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.078773,
+            "resource_count": 11.0,
+            "static_memory": 96752177.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 1,
+          "timestamp": 10913,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 2.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000122,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.078773,
+            "resource_count": 11.0,
+            "static_memory": 96754273.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 2,
+          "timestamp": 10955,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 2.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000122,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.078773,
+            "resource_count": 11.0,
+            "static_memory": 96756297.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 3,
+          "timestamp": 10981,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 2.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000122,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.078773,
+            "resource_count": 11.0,
+            "static_memory": 96758345.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 4,
+          "timestamp": 11004,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 2.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000122,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.078773,
+            "resource_count": 11.0,
+            "static_memory": 96760417.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 5,
+          "timestamp": 11033,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96762441.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 6,
+          "timestamp": 11079,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96764537.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 7,
+          "timestamp": 11119,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96766561.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 8,
+          "timestamp": 11161,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96768585.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 9,
+          "timestamp": 11215,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96770705.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 10,
+          "timestamp": 11248,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96772729.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 11,
+          "timestamp": 11278,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96777009.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 12,
+          "timestamp": 11309,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96779033.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 13,
+          "timestamp": 11355,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96781201.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 14,
+          "timestamp": 11380,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96783225.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 15,
+          "timestamp": 11432,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96785249.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 16,
+          "timestamp": 11462,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96787273.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 17,
+          "timestamp": 11497,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96789297.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 18,
+          "timestamp": 11541,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96791321.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 19,
+          "timestamp": 11574,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96793561.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 20,
+          "timestamp": 11621,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96795537.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 21,
+          "timestamp": 11656,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96797561.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 22,
+          "timestamp": 11680,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96799585.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 23,
+          "timestamp": 11709,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96801609.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 24,
+          "timestamp": 11740,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96803633.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 25,
+          "timestamp": 11759,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96805657.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 26,
+          "timestamp": 11789,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96807681.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 27,
+          "timestamp": 11819,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96809705.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 28,
+          "timestamp": 11876,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96812065.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 29,
+          "timestamp": 11901,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96814089.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 30,
+          "timestamp": 11929,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96816113.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 31,
+          "timestamp": 11953,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96818137.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 32,
+          "timestamp": 11981,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96820161.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 33,
+          "timestamp": 12022,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 25.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000126,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.051528,
+            "resource_count": 11.0,
+            "static_memory": 96822185.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 34,
+          "timestamp": 12055,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96824209.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 35,
+          "timestamp": 12080,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96826233.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 36,
+          "timestamp": 12137,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96828257.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 37,
+          "timestamp": 12158,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96830281.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 38,
+          "timestamp": 12196,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96832305.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 39,
+          "timestamp": 12231,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96834329.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 40,
+          "timestamp": 12262,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96836353.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 41,
+          "timestamp": 12292,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96838377.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 42,
+          "timestamp": 12329,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96840905.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 43,
+          "timestamp": 12369,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96842929.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 44,
+          "timestamp": 12395,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96844953.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 45,
+          "timestamp": 12421,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96846977.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 46,
+          "timestamp": 12457,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96849001.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 47,
+          "timestamp": 12493,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96851025.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 48,
+          "timestamp": 12513,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96853049.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 49,
+          "timestamp": 12548,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96855073.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 50,
+          "timestamp": 12579,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96857097.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 51,
+          "timestamp": 12645,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96859121.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 52,
+          "timestamp": 12670,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96861145.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 53,
+          "timestamp": 12701,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96863169.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 54,
+          "timestamp": 12735,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96865193.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 55,
+          "timestamp": 12772,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96867217.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 56,
+          "timestamp": 12796,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96869241.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 57,
+          "timestamp": 12845,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96871265.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 58,
+          "timestamp": 12879,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96876649.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        },
+        {
+          "frame": 59,
+          "timestamp": 12914,
+          "values": {
+            "draw_calls": 192.0,
+            "fps": 29.0,
+            "navigation_active_maps": 0.0,
+            "node_count": 312.0,
+            "object_count": 2114.0,
+            "objects_in_frame": 192.0,
+            "orphan_node_count": 0.0,
+            "physics_2d_active_objects": 0.0,
+            "physics_3d_active_objects": 0.0,
+            "physics_process_time": 0.000204,
+            "primitives_in_frame": 2228481.0,
+            "process_time": 0.056471,
+            "resource_count": 11.0,
+            "static_memory": 96878673.0,
+            "static_memory_max": 204612553.0,
+            "video_memory": 190857216.0
+          }
+        }
+      ],
+      "budget": null,
+      "passed": null
+    }
+  }
+]

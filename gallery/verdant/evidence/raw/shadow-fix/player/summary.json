@@ -1,0 +1,33 @@
+{
+  "state": {
+    "distance_walked": 7.600007124245167,
+    "grass": {
+      "build_time_ms": 424,
+      "chunks": 256,
+      "quality": "high",
+      "total_clumps": 203878,
+      "visible_chunks": 213,
+      "visible_clumps": 102928,
+      "visible_triangles": 1713288,
+      "wind_enabled": true
+    },
+    "nearest_viewpoint": 2,
+    "paused": false,
+    "position": "(7.489415, 2.611995, 24.70819)",
+    "quality": "high",
+    "render_size": [
+      2560.0,
+      1440.0
+    ],
+    "started": true,
+    "visit_distance": 31.336477279663086,
+    "visited": [],
+    "visited_count": 0,
+    "wind_enabled": true,
+    "window_size": [
+      2560,
+      1440
+    ]
+  },
+  "errors": []
+}

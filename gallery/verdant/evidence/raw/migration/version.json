@@ -1,0 +1,22 @@
+{
+  "command": [
+    "gda",
+    "--version",
+    "--json"
+  ],
+  "cwd": "/Users/lelej/projects/godot-agent-worktree/grass-dev/gallery/verdant",
+  "cli_exit": 0,
+  "result": {
+    "gda_version": "0.14.0",
+    "executable": "/Users/lelej/.local/bin/gda",
+    "interpreter": "/Users/lelej/.local/share/uv/tools/gda/bin/python3",
+    "package_path": "/Users/lelej/.local/share/uv/tools/gda/lib/python3.14/site-packages/gda",
+    "install_kind": "wheel",
+    "source": null,
+    "godot": {
+      "binary": "/Users/lelej/Applications/Godot.app/Contents/MacOS/Godot",
+      "version_unavailable_reason": "the engine reports its version only from a running process, and this surface never launches Godot; run `gda info --json` for it"
+    }
+  },
+  "stderr": ""
+}

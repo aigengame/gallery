@@ -1,0 +1,66 @@
+[
+  {
+    "args": [
+      "game",
+      "set",
+      "/root/ShadowRegression/World/Sun",
+      "--property",
+      "directional_shadow_split_1",
+      "--value",
+      "0.3"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/ShadowRegression/World/Sun",
+      "property": "directional_shadow_split_1",
+      "type": "float",
+      "value": 0.30000001192092896,
+      "verified": false
+    }
+  },
+  {
+    "args": [
+      "game",
+      "set",
+      "/root/ShadowRegression/World/Sun",
+      "--property",
+      "directional_shadow_blend_splits",
+      "--value",
+      "true"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/ShadowRegression/World/Sun",
+      "property": "directional_shadow_blend_splits",
+      "type": "bool",
+      "value": true,
+      "verified": true
+    }
+  },
+  {
+    "args": [
+      "screen",
+      "capture",
+      "--output",
+      "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/csm-settings/split03-blended.png"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/csm-settings/split03-blended.png",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 4363250,
+      "format": "png",
+      "inline": null,
+      "predicate": null,
+      "receipt": {
+        "session_id": "759e88f22cd9d625",
+        "scene_path": "res://tests/shadow_regression.tscn",
+        "scene_uid": null,
+        "engine_frame": 8423,
+        "observed": null,
+        "sha256": "b62e6ac84907d3c2e7fa5d06597ef61d3c8093c7cf5d31acfd68563e14f7f358"
+      }
+    }
+  }
+]

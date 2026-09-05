@@ -1,57 +1,94 @@
-# Verdant / 青野
+# aigengame Gallery
 
-A small, finished green meadow study for desktop playtesting. Walk through curved
-blades, crouch near rooted wind, and follow three viewpoints. English and Simplified
-Chinese menus support real 2560×1440 and 3840×2160 rendering.
+**Playable Godot demos built and verified by AI agents with gda and aigengame
+Agent Skills.** Explore the results, study the technical decisions, and find
+practical foundations for your own projects.
 
-## Play
+**[gda — Godot Automation for AI Agents](https://github.com/aigengame/godot-agent)**
+gives agents direct access to Godot for creating project content, validating
+scripts and scenes, controlling a running game, and exporting builds. Structured
+results, screenshots, diagnostics, and performance measurements let agents check
+what they build against actual engine behavior.
 
-The local player build is `builds/Verdant-macOS.zip`. Extract and open `Verdant.app`.
-The [player guide](distribution/README.txt) contains both languages and controls.
-No Godot editor or gda is required to play. The universal macOS build is locally
-signed; it is not notarized or published. Other platforms are not validated.
+**[aigengame Agent Skills](https://github.com/aigengame/skills)** provides reusable
+methods for designing under uncertainty, executing work, reviewing results, and
+learning from a project. The collection applies systems thinking and fast
+feedback to software delivery, with specialized support for Godot and games.
+These demos show those methods at work alongside gda.
 
-## Develop
+**[Explore demos](#projects) · [Get gda](https://github.com/aigengame/godot-agent#installation) · [Explore skills](https://github.com/aigengame/skills#find-the-right-skill)**
 
-Use Godot 4.6.3, gda 0.14.0, Python 3.9+ and Git LFS. Run `git lfs pull` when
-cloning from a location that has the LFS objects. This repository currently has no
-remote. Binary assets are stored as LFS pointers in Git and exist locally.
+![Verdant grass and continuous shadows](gallery/verdant/evidence/shadow-after-2k.png)
 
-```sh
-python3 tools/assets.py --verify
-gda resource import content/icon.svg content/audio/meadow_ambience.wav content/audio/grass_footstep.wav 'content/fonts/NotoSansSC[wght].ttf' --project .
-gda script validate --all --project . --json
-gda daemon start --windowed --project . --json
-python3 tools/playtest.py
-gda daemon stop --project . --json
-```
+*Verdant / 青野 — a playable meadow with natural green grass. See the
+[shadow continuity study](gallery/verdant/evidence/SHADOW_FIX.md) for the rendering
+decisions, visual comparisons, and measured tradeoffs.*
 
-A windowed gda session needs normal desktop/WindowServer access. A headless test
-is not proof of rendered playability. The route runner must start at the title.
+<table>
+  <tr>
+    <td width="50%">
+      <a href="gallery/verdant/evidence/raw/shadow-fix/movement/crouch.png"><img src="gallery/verdant/evidence/raw/shadow-fix/movement/crouch.png" alt="Close view of curved grass blades, fixed roots, and ground shadows in Verdant" width="100%"></a>
+      <strong>Grass up close</strong><br>Curved blades, fixed roots, and ground shadows.
+    </td>
+    <td width="50%">
+      <a href="gallery/verdant/evidence/raw/migration/playtest/after-restart.png"><img src="gallery/verdant/evidence/raw/migration/playtest/after-restart.png" alt="Wide view along a meadow path toward distant hills in Verdant" width="100%"></a>
+      <strong>Across the meadow</strong><br>Walking paths, dense grass, and distant hills.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <a href="gallery/verdant/evidence/title-zh-2k.png"><img src="gallery/verdant/evidence/title-zh-2k.png" alt="Verdant main menu in Simplified Chinese, with language selection and exploration controls" width="100%"></a>
+      <strong>Chinese main menu</strong><br>Switch language, start exploring, or open the controls.
+    </td>
+    <td width="50%">
+      <a href="gallery/verdant/evidence/raw/display/final-settings-4k.png"><img src="gallery/verdant/evidence/raw/display/final-settings-4k.png" alt="Verdant settings menu in English showing 4K resolution, grass quality, wind, and volume" width="100%"></a>
+      <strong>English settings menu</strong><br>Adjust resolution, grass quality, wind, and volume.
+    </td>
+  </tr>
+</table>
 
-## Build
+Select an image to open the original capture. These views come from recorded
+gameplay and rendering checks in the demo's [evidence directory](gallery/verdant/evidence/).
 
-Install the official Godot 4.6.3 export templates, then:
+## Projects
 
-```sh
-gda export run --preset macOS --mode release --output builds/Verdant-macOS.zip --project . --json
-python3 tools/package_release.py
-```
+| Demo | Product experience | Technical highlights | Validated platform | Explore |
+|---|---|---|---|---|
+| **Verdant / 青野** | Natural green grass; free exploration and close inspection; three viewpoints; English and Simplified Chinese menus. | Chunked MultiMesh rendering with distance LOD; continuous shadows across LODs and shadow cascades; wind with fixed blade roots. | Apple Silicon macOS; 2K / 4K rendering | [Guide](gallery/verdant/README.md) · [Architecture](gallery/verdant/docs/ARCHITECTURE.md) · [Evidence](gallery/verdant/evidence/SHADOW_FIX.md) |
 
-The packaging step includes offline player instructions and licenses and audits
-the actual PCK directory. Source, harness, tests, prompts and evidence are excluded
-from the player. Exported builds stay local and are not committed.
+## Explore and reuse
 
-## Production records
+Each demo keeps its source, assets, tools, tests, and evidence together under
+`gallery/`. Start with the part you want to learn or adapt:
 
-- [Product contract](CONTEXT.md) and [module ownership](docs/ARCHITECTURE.md)
-- [Asset pipeline](tools/asset_pipeline.md), [prompt](assets/prompts/meadow-v1.md)
-  and [provenance receipt](assets/receipts/meadow-assets.json)
-- [gda dogfooding](docs/DOGFOODING.md)
-- [Current shadow fix and performance](evidence/SHADOW_FIX.md)
-- [Original 0.1.0 validation](evidence/VALIDATION.md)
+1. **Explore the product.** Open its guide for the player experience, supported
+   platform, and run or build instructions. Verdant currently provides source and
+   build instructions; a player download has not been published.
+2. **Study the solution.** Follow the architecture and evidence links for module
+   responsibilities, technical tradeoffs, and the conditions behind measurements.
+3. **Trace the implementation.** Read the relevant source, its dependencies, and
+   its tests together. Verdant's [grass renderer](gallery/verdant/addons/meadow_renderer/)
+   accepts terrain height, coverage, and shader inputs from the surrounding
+   project; its [geometry checks](gallery/verdant/tests/grass_geometry.gd) show
+   how placement, detail levels, and shadow casting at each level are verified.
 
-The geometry renderer uses 256 spatial MultiMesh chunks, deterministic clumps,
-three mesh details, smooth density reduction and opaque grass. Reported renderer
-candidate counts are distinct from actual GPU primitive counters. GPU timings are
-not claimed when the engine's timer is unavailable.
+The [asset pipeline](gallery/verdant/tools/asset_pipeline.md) records how Verdant's
+assets are produced and checked. The [gda production notes](gallery/verdant/docs/DOGFOODING.md)
+and [live route record](gallery/verdant/evidence/route-validation.json) connect
+tool use to observed behavior. Each demo retains original evidence and
+third-party notices alongside its source.
+
+Binary assets and screenshots use Git LFS. Install Git LFS before cloning, or run
+`git lfs pull` in an existing clone. Open the selected demo's `project.godot`
+and run its documented commands from that demo's directory. The repository root
+owns the collection; local build outputs and engine caches are ignored.
+
+See the [context map](CONTEXT-MAP.md) for project boundaries and contributor entry points.
+
+## License
+
+Gallery's original code, documentation, and assets are available under the
+[MIT License](LICENSE). Third-party components retain their own licenses and
+notices; see each demo's guide. Verdant includes
+[Noto Sans SC under SIL OFL 1.1](gallery/verdant/content/fonts/OFL.txt) and the
+[Godot notices](gallery/verdant/distribution/licenses/).

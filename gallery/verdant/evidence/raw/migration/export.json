@@ -1,0 +1,26 @@
+{
+  "command": [
+    "gda",
+    "export",
+    "run",
+    "--preset",
+    "macOS",
+    "--mode",
+    "release",
+    "--output",
+    "/Users/lelej/projects/godot-agent-worktree/grass-dev/gallery/verdant/builds/migration-check/Verdant-macOS.zip",
+    "--project",
+    "/Users/lelej/projects/godot-agent-worktree/grass-dev/gallery/verdant",
+    "--json"
+  ],
+  "cli_exit": 0,
+  "result": {
+    "preset": "macOS",
+    "platform": "macOS",
+    "mode": "release",
+    "output_path": "/Users/lelej/projects/godot-agent-worktree/grass-dev/gallery/verdant/builds/migration-check/Verdant-macOS.zip",
+    "created_dirs": [],
+    "warnings": []
+  },
+  "stderr": "gda: running operation: export-get\ngda: exporting preset \"macOS\" (release) ...\n"
+}

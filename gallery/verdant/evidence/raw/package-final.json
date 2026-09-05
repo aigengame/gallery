@@ -1,0 +1,19 @@
+{
+  "engine": "4.6.3",
+  "pck_format": 3,
+  "pck_sha256": "34d1b39e057bf46378b5e052b305e5038b8828133b716dd276ce6cf7d950c65c",
+  "font_license_matches_source": true,
+  "tooling_excluded": true,
+  "bundle_identifier": "org.verdant.meadow",
+  "version": "0.1.0",
+  "zip": "Verdant-macOS.zip",
+  "bytes": 76507001,
+  "sha256": "f260c8cb8551d2a1fa4aec408c4d47c1936efb121a317053ee451d297f05c915",
+  "source_commit": "12700686e6ab3f15018e4c36e52f9de8b62adf2b",
+  "offline_files": {
+    "README.txt": "25f3f669122785b762616743462d600fedb5d6cb8bbb81347a0a72d1e8bbe3cf",
+    "licenses/OFL.txt": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+    "licenses/GODOT-COPYRIGHT.txt": "b3330849267d56ddd3d62a513817506606c2195034411fe05859f0140bff9d8a",
+    "licenses/GODOT-LICENSE.txt": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80"
+  }
+}

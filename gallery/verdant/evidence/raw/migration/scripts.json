@@ -1,0 +1,94 @@
+{
+  "command": [
+    "gda",
+    "--user-data-root",
+    "/tmp/verdant-layout-headless",
+    "script",
+    "validate",
+    "--all",
+    "--project",
+    ".",
+    "--json"
+  ],
+  "cwd": "/Users/lelej/projects/godot-agent-worktree/grass-dev/gallery/verdant",
+  "cli_exit": 0,
+  "result": {
+    "valid": true,
+    "scripts": [
+      {
+        "path": "res://addons/gda_harness/gda_harness.gd",
+        "valid": true,
+        "error_string": null,
+        "diagnostics": []
+      },
+      {
+        "path": "res://addons/meadow_renderer/grass_field.gd",
+        "valid": true,
+        "error_string": null,
+        "diagnostics": []
+      },
+      {
+        "path": "res://content/explorer/explorer.gd",
+        "valid": true,
+        "error_string": null,
+        "diagnostics": []
+      },
+      {
+        "path": "res://content/meadow/meadow_world.gd",
+        "valid": true,
+        "error_string": null,
+        "diagnostics": []
+      },
+      {
+        "path": "res://content/meadow/terrain.gd",
+        "valid": true,
+        "error_string": null,
+        "diagnostics": []
+      },
+      {
+        "path": "res://main.gd",
+        "valid": true,
+        "error_string": null,
+        "diagnostics": []
+      },
+      {
+        "path": "res://systems/exploration/visit_progress.gd",
+        "valid": true,
+        "error_string": null,
+        "diagnostics": []
+      },
+      {
+        "path": "res://tests/exploration.gd",
+        "valid": true,
+        "error_string": null,
+        "diagnostics": []
+      },
+      {
+        "path": "res://tests/grass_geometry.gd",
+        "valid": true,
+        "error_string": null,
+        "diagnostics": []
+      },
+      {
+        "path": "res://tests/input_boundary.gd",
+        "valid": true,
+        "error_string": null,
+        "diagnostics": []
+      },
+      {
+        "path": "res://tests/shadow_regression.gd",
+        "valid": true,
+        "error_string": null,
+        "diagnostics": []
+      },
+      {
+        "path": "res://ui/overlay.gd",
+        "valid": true,
+        "error_string": null,
+        "diagnostics": []
+      }
+    ],
+    "project_root": "/Users/lelej/projects/godot-agent-worktree/grass-dev/gallery/verdant"
+  },
+  "stderr": "gda: running operation: script-validate\ngda: validating: res://addons/gda_harness/gda_harness.gd\ngda: validating: res://addons/meadow_renderer/grass_field.gd\ngda: validating: res://content/explorer/explorer.gd\ngda: validating: res://content/meadow/meadow_world.gd\ngda: validating: res://content/meadow/terrain.gd\ngda: validating: res://main.gd\ngda: validating: res://systems/exploration/visit_progress.gd\ngda: validating: res://tests/exploration.gd\ngda: validating: res://tests/grass_geometry.gd\ngda: validating: res://tests/input_boundary.gd\ngda: validating: res://tests/shadow_regression.gd\ngda: validating: res://ui/overlay.gd\n"
+}

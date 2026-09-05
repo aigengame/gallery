@@ -1,0 +1,206 @@
+[
+  {
+    "args": [
+      "input",
+      "sequence",
+      "--events",
+      "[{\"type\": \"action\", \"action\": \"walk_right\", \"physics_frame\": 0}, {\"type\": \"action\", \"action\": \"walk_right\", \"release\": true, \"physics_frame\": 120}]"
+    ],
+    "exit": 0,
+    "result": {
+      "kind": "sequence",
+      "clock": "physics",
+      "events": 2,
+      "frames": 121
+    }
+  },
+  {
+    "args": [
+      "input",
+      "action",
+      "crouch"
+    ],
+    "exit": 0,
+    "result": {
+      "kind": "action",
+      "action": "crouch",
+      "pressed": true,
+      "strength": 1.0
+    }
+  },
+  {
+    "args": [
+      "game",
+      "set",
+      "/root",
+      "--property",
+      "content_scale_size",
+      "--value",
+      "3840,2160"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root",
+      "property": "content_scale_size",
+      "type": "Vector2i",
+      "value": [
+        3840,
+        2160
+      ],
+      "verified": true
+    }
+  },
+  {
+    "args": [
+      "game",
+      "set",
+      "/root/Verdant/Overlay",
+      "--property",
+      "scale",
+      "--value",
+      "1.5,1.5"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/Verdant/Overlay",
+      "property": "scale",
+      "type": "Vector2",
+      "value": [
+        1.5,
+        1.5
+      ],
+      "verified": true
+    }
+  },
+  {
+    "args": [
+      "game",
+      "get",
+      "/root/Verdant/World/Explorer",
+      "--property",
+      "eye_height"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/Verdant/World/Explorer",
+      "name": "Explorer",
+      "type": "Node3D",
+      "properties": [
+        {
+          "name": "eye_height",
+          "type": "float",
+          "value": 0.4804882340958494
+        }
+      ]
+    }
+  },
+  {
+    "args": [
+      "screen",
+      "capture",
+      "--output",
+      "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/explorer-close/close-4k.png"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/explorer-close/close-4k.png",
+      "width": 3840,
+      "height": 2160,
+      "bytes": 6113311,
+      "format": "png",
+      "inline": null,
+      "predicate": null,
+      "receipt": {
+        "session_id": "7165bf466f72fb5a",
+        "scene_path": "res://main.tscn",
+        "scene_uid": null,
+        "engine_frame": 2121,
+        "observed": null,
+        "sha256": "4b36ad492a80f2db8aec2a8ed6e29938b86d100f1b2e0ef54a0c778d3fa6c2e7"
+      }
+    }
+  },
+  {
+    "args": [
+      "input",
+      "action",
+      "crouch",
+      "--release"
+    ],
+    "exit": 0,
+    "result": {
+      "kind": "action",
+      "action": "crouch",
+      "pressed": false,
+      "strength": 0.0
+    }
+  },
+  {
+    "args": [
+      "input",
+      "tap",
+      "--key",
+      "Space",
+      "--hold-frames",
+      "2",
+      "--settle-frames",
+      "1"
+    ],
+    "exit": 0,
+    "result": {
+      "kind": "tap",
+      "key": "Space",
+      "keycode": 32,
+      "modifiers": [],
+      "action": null,
+      "strength": null,
+      "hold_frames": 2,
+      "settle_frames": 1,
+      "frames": 4,
+      "phases": [
+        {
+          "frame": 0,
+          "phase": "press"
+        },
+        {
+          "frame": 2,
+          "phase": "release"
+        }
+      ],
+      "focus_before": null,
+      "focus_after": null
+    }
+  },
+  {
+    "args": [
+      "game",
+      "get",
+      "/root/Verdant/World/Explorer",
+      "--property",
+      "_jump_height"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/Verdant/World/Explorer",
+      "name": "Explorer",
+      "type": "Node3D",
+      "properties": [
+        {
+          "name": "_jump_height",
+          "type": "float",
+          "value": 0.7375000000000004
+        }
+      ]
+    }
+  },
+  {
+    "args": [
+      "diag",
+      "errors"
+    ],
+    "exit": 0,
+    "result": {
+      "errors": []
+    }
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "name": "walk_forward",
+    "deadzone": 0.5,
+    "events": [
+      {
+        "kind": "key",
+        "key": "W",
+        "keycode": 87,
+        "physical": true
+      },
+      {
+        "kind": "key",
+        "key": "Up",
+        "keycode": 4194320,
+        "physical": true
+      }
+    ]
+  },
+  {
+    "name": "walk_back",
+    "deadzone": 0.5,
+    "events": [
+      {
+        "kind": "key",
+        "key": "S",
+        "keycode": 83,
+        "physical": true
+      },
+      {
+        "kind": "key",
+        "key": "Down",
+        "keycode": 4194322,
+        "physical": true
+      }
+    ]
+  },
+  {
+    "name": "walk_left",
+    "deadzone": 0.5,
+    "events": [
+      {
+        "kind": "key",
+        "key": "A",
+        "keycode": 65,
+        "physical": true
+      },
+      {
+        "kind": "key",
+        "key": "Left",
+        "keycode": 4194319,
+        "physical": true
+      }
+    ]
+  },
+  {
+    "name": "walk_right",
+    "deadzone": 0.5,
+    "events": [
+      {
+        "kind": "key",
+        "key": "D",
+        "keycode": 68,
+        "physical": true
+      },
+      {
+        "kind": "key",
+        "key": "Right",
+        "keycode": 4194321,
+        "physical": true
+      }
+    ]
+  },
+  {
+    "name": "sprint",
+    "deadzone": 0.5,
+    "events": [
+      {
+        "kind": "key",
+        "key": "Shift",
+        "keycode": 4194325,
+        "physical": true
+      }
+    ]
+  },
+  {
+    "name": "crouch",
+    "deadzone": 0.5,
+    "events": [
+      {
+        "kind": "key",
+        "key": "Ctrl",
+        "keycode": 4194326,
+        "physical": true
+      }
+    ]
+  }
+]

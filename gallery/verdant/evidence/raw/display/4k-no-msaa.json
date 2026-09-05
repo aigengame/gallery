@@ -1,0 +1,14 @@
+{
+  "path": "/root/Verdant/World",
+  "name": "World",
+  "type": "Node3D",
+  "method": "get_frame_metrics",
+  "value": {
+    "frame_p50_ms": 47.687,
+    "frame_p95_ms": 74.537,
+    "gpu_p50_ms": 0.0,
+    "gpu_p95_ms": 0.0,
+    "gpu_timer_available": false,
+    "samples": 600
+  }
+}

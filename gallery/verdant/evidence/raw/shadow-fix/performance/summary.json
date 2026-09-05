@@ -1,0 +1,136 @@
+{
+  "2560,1440": {
+    "frame_metrics": {
+      "frame_p50_ms": 16.659,
+      "frame_p95_ms": 18.198,
+      "gpu_p50_ms": 0.0,
+      "gpu_p95_ms": 0.0,
+      "gpu_timer_available": false,
+      "samples": 600
+    },
+    "stats": {
+      "fps": {
+        "count": 120,
+        "min": 60.0,
+        "max": 60.0,
+        "mean": 60.0,
+        "p50": 60.0,
+        "p95": 60.0
+      },
+      "draw_calls": {
+        "count": 120,
+        "min": 343.0,
+        "max": 343.0,
+        "mean": 343.0,
+        "p50": 343.0,
+        "p95": 343.0
+      },
+      "primitives_in_frame": {
+        "count": 120,
+        "min": 2982138.0,
+        "max": 2982138.0,
+        "mean": 2982138.0,
+        "p50": 2982138.0,
+        "p95": 2982138.0
+      }
+    },
+    "snapshot": {
+      "distance_walked": 0.0,
+      "grass": {
+        "build_time_ms": 447,
+        "chunks": 256,
+        "quality": "high",
+        "total_clumps": 203878,
+        "visible_chunks": 208,
+        "visible_clumps": 101197,
+        "visible_triangles": 1600803,
+        "wind_enabled": false
+      },
+      "nearest_viewpoint": 2,
+      "paused": false,
+      "position": "(8.0, 2.396679, 26.0)",
+      "quality": "high",
+      "render_size": [
+        2560.0,
+        1440.0
+      ],
+      "started": true,
+      "visit_distance": 31.62277603149414,
+      "visited": [],
+      "visited_count": 0,
+      "wind_enabled": false,
+      "window_size": [
+        1600,
+        900
+      ]
+    },
+    "window_mode": 0
+  },
+  "3840,2160": {
+    "frame_metrics": {
+      "frame_p50_ms": 16.657,
+      "frame_p95_ms": 18.2,
+      "gpu_p50_ms": 0.0,
+      "gpu_p95_ms": 0.0,
+      "gpu_timer_available": false,
+      "samples": 600
+    },
+    "stats": {
+      "fps": {
+        "count": 120,
+        "min": 60.0,
+        "max": 60.0,
+        "mean": 60.0,
+        "p50": 60.0,
+        "p95": 60.0
+      },
+      "draw_calls": {
+        "count": 120,
+        "min": 343.0,
+        "max": 343.0,
+        "mean": 343.0,
+        "p50": 343.0,
+        "p95": 343.0
+      },
+      "primitives_in_frame": {
+        "count": 120,
+        "min": 2982138.0,
+        "max": 2982138.0,
+        "mean": 2982138.0,
+        "p50": 2982138.0,
+        "p95": 2982138.0
+      }
+    },
+    "snapshot": {
+      "distance_walked": 0.0,
+      "grass": {
+        "build_time_ms": 447,
+        "chunks": 256,
+        "quality": "high",
+        "total_clumps": 203878,
+        "visible_chunks": 208,
+        "visible_clumps": 101197,
+        "visible_triangles": 1600803,
+        "wind_enabled": false
+      },
+      "nearest_viewpoint": 2,
+      "paused": false,
+      "position": "(8.0, 2.396679, 26.0)",
+      "quality": "high",
+      "render_size": [
+        3840.0,
+        2160.0
+      ],
+      "started": true,
+      "visit_distance": 31.62277603149414,
+      "visited": [],
+      "visited_count": 0,
+      "wind_enabled": false,
+      "window_size": [
+        1600,
+        900
+      ]
+    },
+    "window_mode": 0
+  }
+}

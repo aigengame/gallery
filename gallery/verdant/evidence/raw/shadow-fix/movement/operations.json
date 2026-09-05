@@ -1,0 +1,368 @@
+[
+  {
+    "args": [
+      "game",
+      "set",
+      "/root",
+      "--property",
+      "mode",
+      "--value",
+      "0"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root",
+      "property": "mode",
+      "type": "int",
+      "value": 0,
+      "verified": true
+    }
+  },
+  {
+    "args": [
+      "game",
+      "set",
+      "/root",
+      "--property",
+      "size",
+      "--value",
+      "1600,900"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root",
+      "property": "size",
+      "type": "Vector2i",
+      "value": [
+        1600,
+        900
+      ],
+      "verified": true
+    }
+  },
+  {
+    "args": [
+      "game",
+      "set",
+      "/root/ShadowRegression/World/Explorer",
+      "--property",
+      "enabled",
+      "--value",
+      "true"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/ShadowRegression/World/Explorer",
+      "property": "enabled",
+      "type": "bool",
+      "value": true,
+      "verified": true
+    }
+  },
+  {
+    "args": [
+      "game",
+      "set",
+      "/root/ShadowRegression/World/Explorer",
+      "--property",
+      "yaw",
+      "--value",
+      "0"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/ShadowRegression/World/Explorer",
+      "property": "yaw",
+      "type": "float",
+      "value": 0.0,
+      "verified": true
+    }
+  },
+  {
+    "args": [
+      "input",
+      "sequence",
+      "--events",
+      "[{\"type\": \"action\", \"action\": \"walk_forward\", \"physics_frame\": 0}, {\"type\": \"action\", \"action\": \"walk_forward\", \"release\": true, \"physics_frame\": 120}]"
+    ],
+    "exit": 0,
+    "result": {
+      "kind": "sequence",
+      "clock": "physics",
+      "events": 2,
+      "frames": 121
+    }
+  },
+  {
+    "args": [
+      "screen",
+      "capture",
+      "--output",
+      "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/movement/walk-0.png"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/movement/walk-0.png",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 4176842,
+      "format": "png",
+      "inline": null,
+      "predicate": null,
+      "receipt": {
+        "session_id": "bfb7a2c2fcd0d0c2",
+        "scene_path": "res://tests/shadow_regression.tscn",
+        "scene_uid": null,
+        "engine_frame": 194,
+        "observed": null,
+        "sha256": "365ebddc406aada3aa464c6880080caa521f1d8820cddbdd23e7eb862b737471"
+      }
+    }
+  },
+  {
+    "args": [
+      "game",
+      "set",
+      "/root/ShadowRegression/World/Explorer",
+      "--property",
+      "yaw",
+      "--value",
+      "1.57"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/ShadowRegression/World/Explorer",
+      "property": "yaw",
+      "type": "float",
+      "value": 1.57,
+      "verified": true
+    }
+  },
+  {
+    "args": [
+      "input",
+      "sequence",
+      "--events",
+      "[{\"type\": \"action\", \"action\": \"walk_forward\", \"physics_frame\": 0}, {\"type\": \"action\", \"action\": \"walk_forward\", \"release\": true, \"physics_frame\": 120}]"
+    ],
+    "exit": 0,
+    "result": {
+      "kind": "sequence",
+      "clock": "physics",
+      "events": 2,
+      "frames": 121
+    }
+  },
+  {
+    "args": [
+      "screen",
+      "capture",
+      "--output",
+      "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/movement/walk-1.png"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/movement/walk-1.png",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 4571074,
+      "format": "png",
+      "inline": null,
+      "predicate": null,
+      "receipt": {
+        "session_id": "bfb7a2c2fcd0d0c2",
+        "scene_path": "res://tests/shadow_regression.tscn",
+        "scene_uid": null,
+        "engine_frame": 361,
+        "observed": null,
+        "sha256": "4f717579ab23e938b036a976c8a4b071d98acd92fbdf6b3f67fb8c5fbb8ec452"
+      }
+    }
+  },
+  {
+    "args": [
+      "game",
+      "set",
+      "/root/ShadowRegression/World/Explorer",
+      "--property",
+      "yaw",
+      "--value",
+      "3.14"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/ShadowRegression/World/Explorer",
+      "property": "yaw",
+      "type": "float",
+      "value": 3.14,
+      "verified": true
+    }
+  },
+  {
+    "args": [
+      "input",
+      "sequence",
+      "--events",
+      "[{\"type\": \"action\", \"action\": \"walk_forward\", \"physics_frame\": 0}, {\"type\": \"action\", \"action\": \"walk_forward\", \"release\": true, \"physics_frame\": 120}]"
+    ],
+    "exit": 0,
+    "result": {
+      "kind": "sequence",
+      "clock": "physics",
+      "events": 2,
+      "frames": 121
+    }
+  },
+  {
+    "args": [
+      "screen",
+      "capture",
+      "--output",
+      "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/movement/walk-2.png"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/movement/walk-2.png",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 4710798,
+      "format": "png",
+      "inline": null,
+      "predicate": null,
+      "receipt": {
+        "session_id": "bfb7a2c2fcd0d0c2",
+        "scene_path": "res://tests/shadow_regression.tscn",
+        "scene_uid": null,
+        "engine_frame": 526,
+        "observed": null,
+        "sha256": "bd77193e335944a07c513711255a027995c719e73e5c3439ffd4e09e37d18415"
+      }
+    }
+  },
+  {
+    "args": [
+      "input",
+      "action",
+      "crouch"
+    ],
+    "exit": 0,
+    "result": {
+      "kind": "action",
+      "action": "crouch",
+      "pressed": true,
+      "strength": 1.0
+    }
+  },
+  {
+    "args": [
+      "input",
+      "sequence",
+      "--events",
+      "[{\"type\": \"action\", \"action\": \"walk_forward\", \"physics_frame\": 0}, {\"type\": \"action\", \"action\": \"walk_forward\", \"release\": true, \"physics_frame\": 45}]"
+    ],
+    "exit": 0,
+    "result": {
+      "kind": "sequence",
+      "clock": "physics",
+      "events": 2,
+      "frames": 46
+    }
+  },
+  {
+    "args": [
+      "screen",
+      "capture",
+      "--output",
+      "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/movement/crouch.png"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/movement/crouch.png",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 3701198,
+      "format": "png",
+      "inline": null,
+      "predicate": null,
+      "receipt": {
+        "session_id": "bfb7a2c2fcd0d0c2",
+        "scene_path": "res://tests/shadow_regression.tscn",
+        "scene_uid": null,
+        "engine_frame": 616,
+        "observed": null,
+        "sha256": "bafc903ffa62c69919455b3c04747dfb302748c19c2c4fc15ca8cfc27ec51f79"
+      }
+    }
+  },
+  {
+    "args": [
+      "input",
+      "action",
+      "crouch",
+      "--release"
+    ],
+    "exit": 0,
+    "result": {
+      "kind": "action",
+      "action": "crouch",
+      "pressed": false,
+      "strength": 0.0
+    }
+  },
+  {
+    "args": [
+      "game",
+      "call",
+      "/root/ShadowRegression/World",
+      "--method",
+      "get_snapshot"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/ShadowRegression/World",
+      "name": "World",
+      "type": "Node3D",
+      "method": "get_snapshot",
+      "value": {
+        "distance_walked": 24.300041671842337,
+        "grass": {
+          "build_time_ms": 424,
+          "chunks": 256,
+          "quality": "high",
+          "total_clumps": 203878,
+          "visible_chunks": 210,
+          "visible_clumps": 101688,
+          "visible_triangles": 1717005,
+          "wind_enabled": false
+        },
+        "nearest_viewpoint": 0,
+        "paused": false,
+        "position": "(0.385501, 1.826273, 27.49403)",
+        "quality": "high",
+        "render_size": [
+          2560.0,
+          1440.0
+        ],
+        "started": true,
+        "visit_distance": 29.05181312561035,
+        "visited": [],
+        "visited_count": 0,
+        "wind_enabled": false,
+        "window_size": [
+          1600,
+          900
+        ]
+      }
+    }
+  },
+  {
+    "args": [
+      "diag",
+      "errors"
+    ],
+    "exit": 0,
+    "result": {
+      "errors": []
+    }
+  }
+]

@@ -1,0 +1,156 @@
+[
+  {
+    "args": [
+      "screen",
+      "capture",
+      "--output",
+      "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/camera-fixed/stable.png"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/camera-fixed/stable.png",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 4167962,
+      "format": "png",
+      "inline": null,
+      "predicate": null,
+      "receipt": {
+        "session_id": "759e88f22cd9d625",
+        "scene_path": "res://tests/shadow_regression.tscn",
+        "scene_uid": null,
+        "engine_frame": 776,
+        "observed": null,
+        "sha256": "e8071c011821371d5cf80ca5ce100defdbf128f79f07924b11d0494609b6aecb"
+      }
+    }
+  },
+  {
+    "args": [
+      "game",
+      "set",
+      "/root/ShadowRegression/World/Sun",
+      "--property",
+      "directional_shadow_blend_splits",
+      "--value",
+      "true"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/ShadowRegression/World/Sun",
+      "property": "directional_shadow_blend_splits",
+      "type": "bool",
+      "value": true,
+      "verified": true
+    }
+  },
+  {
+    "args": [
+      "screen",
+      "capture",
+      "--output",
+      "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/camera-fixed/blended.png"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/camera-fixed/blended.png",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 4182666,
+      "format": "png",
+      "inline": null,
+      "predicate": null,
+      "receipt": {
+        "session_id": "759e88f22cd9d625",
+        "scene_path": "res://tests/shadow_regression.tscn",
+        "scene_uid": null,
+        "engine_frame": 798,
+        "observed": null,
+        "sha256": "9bb058462f95444dfff0211dbbee944ef59272602848c38f37da48a64f029a16"
+      }
+    }
+  },
+  {
+    "args": [
+      "game",
+      "set",
+      "/root/ShadowRegression/World/Sun",
+      "--property",
+      "directional_shadow_blend_splits",
+      "--value",
+      "false"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/ShadowRegression/World/Sun",
+      "property": "directional_shadow_blend_splits",
+      "type": "bool",
+      "value": false,
+      "verified": true
+    }
+  },
+  {
+    "args": [
+      "game",
+      "set",
+      "/root/ShadowRegression/World/Sun",
+      "--property",
+      "shadow_enabled",
+      "--value",
+      "false"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/ShadowRegression/World/Sun",
+      "property": "shadow_enabled",
+      "type": "bool",
+      "value": false,
+      "verified": true
+    }
+  },
+  {
+    "args": [
+      "screen",
+      "capture",
+      "--output",
+      "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/camera-fixed/no-shadow.png"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/Users/lelej/projects/godot-agent-worktree/grass-dev/evidence/raw/shadow-fix/camera-fixed/no-shadow.png",
+      "width": 2560,
+      "height": 1440,
+      "bytes": 3395406,
+      "format": "png",
+      "inline": null,
+      "predicate": null,
+      "receipt": {
+        "session_id": "759e88f22cd9d625",
+        "scene_path": "res://tests/shadow_regression.tscn",
+        "scene_uid": null,
+        "engine_frame": 830,
+        "observed": null,
+        "sha256": "c9311576bca87cd52803247d7009d3f15adbf895c084c79651857a45640d563e"
+      }
+    }
+  },
+  {
+    "args": [
+      "game",
+      "set",
+      "/root/ShadowRegression/World/Sun",
+      "--property",
+      "shadow_enabled",
+      "--value",
+      "true"
+    ],
+    "exit": 0,
+    "result": {
+      "path": "/root/ShadowRegression/World/Sun",
+      "property": "shadow_enabled",
+      "type": "bool",
+      "value": true,
+      "verified": true
+    }
+  }
+]

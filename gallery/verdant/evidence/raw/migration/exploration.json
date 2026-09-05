@@ -1,0 +1,29 @@
+{
+  "command": [
+    "gda",
+    "--user-data-root",
+    "/tmp/verdant-layout-headless",
+    "script",
+    "run",
+    "tests/exploration.gd",
+    "--strict",
+    "--completion-marker",
+    "EXPLORATION_CHECK_COMPLETE",
+    "--project",
+    ".",
+    "--json"
+  ],
+  "cwd": "/Users/lelej/projects/godot-agent-worktree/grass-dev/gallery/verdant",
+  "cli_exit": 0,
+  "result": {
+    "path": "res://tests/exploration.gd",
+    "exit_status": 0,
+    "stdout": "Godot Engine v4.6.3.stable.official.7d41c59c4 - https://godotengine.org\n\nEXPLORATION_CHECK_COMPLETE\n",
+    "stderr": "",
+    "stdout_bytes": 100,
+    "stdout_truncated": false,
+    "stdout_file": null,
+    "diagnostics": []
+  },
+  "stderr": ""
+}

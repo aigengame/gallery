@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "language_switch": true,
+  "real_action_movement": true,
+  "pause_freezes_movement": true,
+  "viewpoints_visited": 3,
+  "completion_continue": true,
+  "restart_clears_progress": true,
+  "runtime_errors": [],
+  "operations": 63
+}

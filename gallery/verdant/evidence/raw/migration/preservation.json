@@ -1,0 +1,13 @@
+{
+  "baseline_files": 214,
+  "files_preserved_at_new_path": 214,
+  "unchanged_files": 212,
+  "updated_documents": [
+    "CONTEXT.md",
+    "README.md"
+  ],
+  "historical_evidence_files_unchanged": 129,
+  "local_build_files_unchanged": 26,
+  "original_release_zip_sha256": "89bceddbfbe164b55cbbb6d79b5adaaa8ff4085e6c4a0c6abd634b4ef55b1fd6",
+  "note": "STATE.md was still unchanged at this check; the local ignored report is updated after validation."
+}

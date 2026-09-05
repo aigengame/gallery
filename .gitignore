@@ -4,7 +4,9 @@ builds/
 __pycache__/
 *.pyc
 .runtime/
-evidence/raw/
 *.tmp
 .agents/
 .claude/
+RULES.md
+STATE.md
+skills-lock.json

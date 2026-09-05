@@ -1,0 +1,1 @@
+{"error":{"category":"usage","code":"unknown_option","message":"`gda project set` has no option `--setting`; run `gda project set --help` for the options it takes, or `gda project set --schema` for its input contract","diagnostics":""}}
