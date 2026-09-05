@@ -41,8 +41,8 @@ const COPY := {
 		"restart": "Restart route",
 		"settings_title": "Settings",
 		"language": "Language",
-		"resolution": "Windowed resolution",
-		"resolution_hint": "This target applies in windowed mode. Fullscreen uses the display's current resolution.",
+		"resolution": "Render resolution",
+		"resolution_hint": "The meadow is rendered at this resolution and fitted to your window or display.",
 		"window_mode": "Window mode",
 		"windowed": "Windowed",
 		"fullscreen": "Fullscreen",
@@ -60,11 +60,15 @@ const COPY := {
 		"move": "Move",
 		"look": "Look",
 		"sprint": "Sprint",
+		"crouch": "Crouch",
+		"jump": "Jump",
 		"visit": "Record viewpoint",
 		"menu": "Pause menu",
 		"move_keys": "W  A  S  D",
 		"look_keys": "MOUSE",
 		"sprint_keys": "SHIFT",
+		"crouch_keys": "CTRL",
+		"jump_keys": "SPACE",
 		"visit_keys": "E",
 		"menu_keys": "ESC",
 		"controls_note": "Move at your own pace. A viewpoint prompt appears when you are close enough to record it.",
@@ -94,8 +98,8 @@ const COPY := {
 		"restart": "重新开始路线",
 		"settings_title": "设置",
 		"language": "语言",
-		"resolution": "窗口分辨率",
-		"resolution_hint": "此目标仅用于窗口模式；全屏模式使用显示器当前分辨率。",
+		"resolution": "渲染分辨率",
+		"resolution_hint": "草野按此分辨率渲染，再适配窗口或全屏显示。",
 		"window_mode": "窗口模式",
 		"windowed": "窗口",
 		"fullscreen": "全屏",
@@ -113,11 +117,15 @@ const COPY := {
 		"move": "移动",
 		"look": "观察",
 		"sprint": "快走",
+		"crouch": "蹲下",
+		"jump": "跳跃",
 		"visit": "记录观景点",
 		"menu": "暂停菜单",
 		"move_keys": "W  A  S  D",
 		"look_keys": "鼠标",
 		"sprint_keys": "SHIFT",
+		"crouch_keys": "CTRL",
+		"jump_keys": "空格",
 		"visit_keys": "E",
 		"menu_keys": "ESC",
 		"controls_note": "按自己的节奏前行。靠近观景点时，画面会提示你记录它。",
@@ -178,7 +186,7 @@ func _ready() -> void:
 	layer = 100
 	_load_locale()
 	_build_interface()
-	get_tree().root.content_scale_size = BASE_CANVAS_SIZE
+	_apply_render_resolution()
 	if not get_tree().root.size_changed.is_connected(_update_display_status):
 		get_tree().root.size_changed.connect(_update_display_status)
 	_refresh_copy()
@@ -226,7 +234,8 @@ func set_locale(code: String) -> void:
 func _build_interface() -> void:
 	_root = Control.new()
 	_root.name = "PlayerInterface"
-	_root.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	_root.set_anchors_and_offsets_preset(Control.PRESET_TOP_LEFT)
+	_root.size = BASE_CANVAS_SIZE
 	_root.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_root.theme = _create_theme()
 	add_child(_root)
@@ -457,6 +466,8 @@ func _build_modal_layer() -> void:
 	_add_control_row(controls_grid, "move", "move_keys")
 	_add_control_row(controls_grid, "look", "look_keys")
 	_add_control_row(controls_grid, "sprint", "sprint_keys")
+	_add_control_row(controls_grid, "crouch", "crouch_keys")
+	_add_control_row(controls_grid, "jump", "jump_keys")
 	_add_control_row(controls_grid, "visit", "visit_keys")
 	_add_control_row(controls_grid, "menu", "menu_keys")
 	controls.add_child(_spacer(28))
@@ -713,18 +724,34 @@ func _on_resolution_selected(index: int) -> void:
 	if index < 0 or index >= RESOLUTIONS.size():
 		return
 	_selected_resolution = RESOLUTIONS[index]
-	if _current_window_mode_index() == 0:
-		DisplayServer.window_set_size(_selected_resolution)
+	_apply_render_resolution()
 	call_deferred("_update_display_status")
+
+
+func _apply_render_resolution() -> void:
+	get_window().content_scale_mode = Window.CONTENT_SCALE_MODE_VIEWPORT
+	get_window().content_scale_aspect = Window.CONTENT_SCALE_ASPECT_KEEP
+	get_window().content_scale_size = _selected_resolution
+	var ui_scale := float(_selected_resolution.x) / float(BASE_CANVAS_SIZE.x)
+	transform = Transform2D(0.0, Vector2(ui_scale, ui_scale), 0.0, Vector2.ZERO)
+	if _current_window_mode_index() == 0:
+		_fit_window()
+
+
+func _fit_window() -> void:
+	var screen := DisplayServer.window_get_current_screen()
+	var available := Vector2(DisplayServer.screen_get_usable_rect(screen).size) * 0.85
+	var ratio := minf(1.0, minf(available.x / _selected_resolution.x, available.y / _selected_resolution.y))
+	get_window().size = Vector2i(Vector2(_selected_resolution) * ratio)
+	_center_window_deferred.call_deferred()
 
 
 func _on_window_mode_selected(index: int) -> void:
 	if index == 0:
-		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
-		DisplayServer.window_set_size(_selected_resolution)
-		_center_window_deferred.call_deferred()
+		get_window().mode = Window.MODE_WINDOWED
+		_fit_window()
 	else:
-		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+		get_window().mode = Window.MODE_FULLSCREEN
 	call_deferred("_update_display_status")
 
 
@@ -761,7 +788,7 @@ func _update_volume_label() -> void:
 func _update_display_status() -> void:
 	if _display_status_label == null:
 		return
-	var size := DisplayServer.window_get_size()
+	var size := _selected_resolution
 	var mode := _l("windowed") if _current_window_mode_index() == 0 else _l("fullscreen")
 	_display_status_label.text = _l("display_status").format({
 		"width": size.x,

@@ -29,3 +29,9 @@ GPU primitives and captured pixels provide actual rendered evidence.
 Source procedures, generation brief and asset receipts are under `assets/` and
 `tools/`. Only runtime content is exported. Test and evidence directories are not
 runtime dependencies. See `tools/asset_pipeline.md` for regeneration and admission.
+
+The Mobile renderer with FXAA fits this single-light scene. No Forward+-only effect
+is required. The root viewport renders at the player's selected 2K or 4K size;
+the physical window fits the available screen. The Overlay keeps a 2560×1440
+layout and scales its CanvasLayer for 4K. Fullscreen changes presentation, not the
+selected render target. This avoids macOS clamping a requested 4K window height.

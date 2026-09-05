@@ -18,4 +18,3 @@ func reset() -> void:
 
 func is_complete() -> bool:
 	return visited.size() == total
-

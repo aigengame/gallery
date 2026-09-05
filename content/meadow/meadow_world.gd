@@ -229,7 +229,7 @@ func get_viewpoints() -> Array:
 	return result
 
 func get_snapshot() -> Dictionary:
-	return {"started":started,"paused":paused,"visited_count":visited_count,"visited":_progress.visited,"nearest_viewpoint":nearest_viewpoint,"visit_distance":visit_distance,"quality":quality,"wind_enabled":wind_enabled,"position":explorer.position,"distance_walked":explorer.distance_walked,"grass":grass.get_stats() if grass else {},"window_size":get_window().size}
+	return {"started":started,"paused":paused,"visited_count":visited_count,"visited":_progress.visited,"nearest_viewpoint":nearest_viewpoint,"visit_distance":visit_distance,"quality":quality,"wind_enabled":wind_enabled,"position":explorer.position,"distance_walked":explorer.distance_walked,"grass":grass.get_stats() if grass else {},"window_size":get_window().size,"render_size":get_viewport().get_texture().get_size()}
 
 func get_frame_metrics() -> Dictionary:
 	var frames := _metric_frames.duplicate()

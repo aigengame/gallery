@@ -64,6 +64,8 @@ func build() -> void:
 
 func update_view(camera_position: Vector3) -> void:
 	_camera_position = camera_position
+	if _material != null:
+		_material.set_shader_parameter("player_position", camera_position)
 	var now := Time.get_ticks_msec()
 	if now - _last_view_ms < VIEW_INTERVAL_MS:
 		return

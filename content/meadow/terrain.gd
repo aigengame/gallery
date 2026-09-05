@@ -46,4 +46,3 @@ static func create_mesh() -> ArrayMesh:
 			for index in [a, a + 1, a + STEPS + 1, a + 1, a + STEPS + 2, a + STEPS + 1]:
 				surface.add_index(index)
 	return surface.commit()
-

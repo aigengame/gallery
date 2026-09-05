@@ -9,4 +9,3 @@ func _ready() -> void:
 		add_child(overlay)
 		overlay.setup(world)
 		world.pause_requested.connect(overlay.handle_escape)
-
