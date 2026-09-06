@@ -13,3 +13,6 @@
 *.pck filter=lfs diff=lfs merge=lfs -text
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 
+# gda installs and synchronizes this derived harness in each demo.
+gallery/**/addons/gda_harness/** linguist-vendored
+
