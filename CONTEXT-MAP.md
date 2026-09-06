@@ -1,7 +1,7 @@
 # Gallery context map
 
 Gallery is a collection of independent demo projects in one Git repository.
-Its user-facing README showcases work built with gda and aigengame Agent Skills
+Its user-facing README showcases work built with gda and AIGen Game Agent Skills
 and guides readers from product experiences to technical solutions and reuse.
 The repository root owns collection navigation and shared collaboration guidance.
 Each directory under `gallery/` owns a complete domain project.

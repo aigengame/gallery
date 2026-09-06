@@ -1,20 +1,11 @@
-# aigengame Gallery
+# AIGen Game Gallery: Playable Godot Demos Developed with AI Agents
 
-**Playable Godot demos built and verified by AI agents with gda and aigengame
-Agent Skills.** Explore the results, study the technical decisions, and find
-practical foundations for your own projects.
+**Playable Godot demos developed and verified with AI agents using gda and
+AIGen Game Agent Skills.**
 
-**[gda — Godot Automation for AI Agents](https://github.com/aigengame/godot-agent)**
-gives agents direct access to Godot for creating project content, validating
-scripts and scenes, controlling a running game, and exporting builds. Structured
-results, screenshots, diagnostics, and performance measurements let agents check
-what they build against actual engine behavior.
-
-**[aigengame Agent Skills](https://github.com/aigengame/skills)** provides reusable
-methods for designing under uncertainty, executing work, reviewing results, and
-learning from a project. The collection applies systems thinking and fast
-feedback to software delivery, with specialized support for Godot and games.
-These demos show those methods at work alongside gda.
+Explore playable projects, source code, architecture, and recorded runtime
+evidence. Each demo states how to run it, where its evidence was captured, and
+whether a downloadable build is available.
 
 **[Explore demos](#projects) · [Get gda](https://github.com/aigengame/godot-agent#installation) · [Explore skills](https://github.com/aigengame/skills#find-the-right-skill)**
 
@@ -52,9 +43,22 @@ gameplay and rendering checks in the demo's [evidence directory](gallery/verdant
 
 ## Projects
 
-| Demo | Product experience | Technical highlights | Validated platform | Explore |
+Here, *playable* means that each project can be built and run from source using
+its guide. Downloadable builds are listed separately when available.
+
+| Demo | Product experience | Technical highlights | Evidence captured on | Explore |
 |---|---|---|---|---|
 | **Verdant / 青野** | Natural green grass; free exploration and close inspection; three viewpoints; English and Simplified Chinese menus. | Chunked MultiMesh rendering with distance LOD; continuous shadows across LODs and shadow cascades; wind with fixed blade roots. | Apple Silicon macOS; 2K / 4K rendering | [Guide](gallery/verdant/README.md) · [Architecture](gallery/verdant/docs/ARCHITECTURE.md) · [Evidence](gallery/verdant/evidence/SHADOW_FIX.md) |
+
+## How these demos are built and verified
+
+**[gda — Godot Automation for AI Agents](https://github.com/aigengame/godot-agent)**
+provides the Godot automation and structured results used to build and verify
+each demo, including runtime evidence from the running game.
+
+**[AIGen Game Agent Skills](https://github.com/aigengame/skills)** provide reusable
+development and review methods. Each project's records show how agents applied
+those methods alongside gda.
 
 ## Explore and reuse
 
